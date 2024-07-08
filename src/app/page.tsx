@@ -1,4 +1,3 @@
-import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -24,11 +23,13 @@ export default function Page() {
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
-
+              <BlurFadeText
+                delay={BLUR_FADE_DELAY}
+                className="text-sm"
+                text={`Based in ${DATA.location}`}
+              />
               <BlurFade delay={BLUR_FADE_DELAY * 4}>
-                <Markdown className=" leading-7">
-                  {DATA.description}
-                </Markdown>
+                <Markdown className=" leading-7">{DATA.description}</Markdown>
               </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>

@@ -5,12 +5,12 @@ export const DATA = {
   name: "Rohit Bajaj",
   initials: "RB",
   url: "https://example.io",
-  location: "Melbourne VIC",
+  location: "Melbourne, VIC, Australia",
   locationLink: "https://maps.app.goo.gl/GURYmPbDApDaYdjB9",
   description:
     "IT graduate (D) from Deakin University 🎓 Coding Instructor 🧑‍🏫 Freelance Web Developer 🧑🏼‍💻 150 rank on 8 ball pool Mobile 🎱 Seeking Internship/graduate roles 👀 Let's chat 💬",
   summary:
-    "After i graduated in Early 2024, i worked as a freelancer building website for small companies before i had the opprtunity to work as a programming instructor in the school of IT at Deakin University. I have been teaching programming languages like C, C++, HTML, CSS, JavaScript, SQL, and more. I have also been working on my own projects and have been learning new technologies like React, Node.js, Express, MongoDB, and more. I am currently seeking internship/graduate roles in the field of IT.",
+    "After i graduated in Early 2024, i worked as a freelancer building website for small companies before i had the opprtunity to work as a programming instructor in the school of IT at Deakin University. I have been teaching programming languages like C++, C#,  HTML, CSS, JavaScript, SQL, and more. I have also been working on my own projects and have been learning new technologies like React, Next.js, Node.js, Express, MongoDB, and more. I am currently seeking internship/graduate roles in the field of IT.",
   avatarUrl: "/me.png",
   skills: [
     "HTML",
