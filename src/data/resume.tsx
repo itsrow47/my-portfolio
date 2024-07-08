@@ -78,7 +78,7 @@ export const DATA = {
       start: "Feb 2024",
       end: "Present",
       description:
-        "Roles and responsibilities include: - Preparing and delivering tutorials and help sessions - Preparing and marking assessments - Providing feedback to students - Responding to student queries - Attending meetings and training sessions - Participating in unit development and review - Participating in moderation and validation of assessments - Participating in the development of unit materials - Participating in the development of unit assessment tasks - Participating in the development of unit learning outcomes - Participating in the development of unit learning activities - Participating in the development of unit assessment criteria - Participating in the development of unit assessment rubrics - Participating in the development of unit marking guides - Participating in the development of unit moderation processes",
+        "Roles and responsibilities include: - Preparing and delivering tutorials and help sessions - Preparing and marking assessments - Providing feedback to students - Responding to student queries - Attending meetings and training sessions - Participating in unit development and review.",
     },
     {
       company: "DataBytes",
@@ -114,7 +114,7 @@ export const DATA = {
       start: "Mar 2023",
       end: "Jun 2023",
       description:
-        "Supported the IT team in the day-to-day operations of the company. Assisted in the installation, configuration, and maintenance of computer hardware, software, and networks. Provided technical support to employees and customers. Assisted in troubleshooting and resolving technical issues. ",
+        "Supported the IT team in the day-to-day operations of the company. Assisted in the installation, configuration, and maintenance of computer hardware, software, and networks. Provided technical support to employees and customers. Assisted in troubleshooting and resolving technical issues.",
     },
   ],
   education: [
@@ -176,7 +176,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/invoicy.png",
+      image: "/Invoicy.png",
       video: "",
     },
     {
@@ -200,8 +200,8 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://invoice-by-rohit.vercel.app",
+          type: "LinkedIn Post",
+          href: "https://www.linkedin.com/feed/update/urn:li:activity:7106206929890287616/",
           icon: <Icons.globe className="size-3" />,
         },
         {
