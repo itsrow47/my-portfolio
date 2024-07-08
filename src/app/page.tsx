@@ -13,7 +13,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10 mt-10">
+    <main className="flex flex-col min-h-[100dvh] space-y-10 mt-20 lg:mt-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
@@ -26,13 +26,13 @@ export default function Page() {
               />
 
               <BlurFade delay={BLUR_FADE_DELAY * 4}>
-                <Markdown className=" md:text-base">
+                <Markdown className=" leading-7">
                   {DATA.description}
                 </Markdown>
               </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-40 border">
+              <Avatar className="size-24 border">
                 <AvatarImage
                   alt={DATA.name}
                   src={DATA.avatarUrl}
@@ -46,17 +46,17 @@ export default function Page() {
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-semibold mb-10">About</h2>
+          <h2 className="text-xl font-semibold mb-5">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+          <Markdown className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert">
             {DATA.summary}
           </Markdown>
         </BlurFade>
       </section>
       <section id="skills">
         <BlurFade delay={BLUR_FADE_DELAY * 9}>
-          <h2 className="text-xl font-semibold mb-10">Skills</h2>
+          <h2 className="text-xl font-semibold mb-5">Skills</h2>
         </BlurFade>
         <div className="flex min-h-0 flex-col gap-y-5">
           <div className="flex flex-wrap gap-2">
@@ -70,7 +70,7 @@ export default function Page() {
       </section>
       <section id="work">
         <BlurFade delay={BLUR_FADE_DELAY * 5}>
-          <h2 className="text-xl font-semibold mb-10">Work Experience</h2>
+          <h2 className="text-xl font-semibold mb-5">Work Experience</h2>
         </BlurFade>
         <div className="flex min-h-0 flex-col gap-y-5">
           {DATA.work.map((work, id) => (
@@ -95,7 +95,7 @@ export default function Page() {
       </section>
       <section id="education">
         <BlurFade delay={BLUR_FADE_DELAY * 7}>
-          <h2 className="text-xl font-semibold mb-10">Education</h2>
+          <h2 className="text-xl font-semibold mb-5">Education</h2>
         </BlurFade>
         <div className="flex min-h-0 flex-col gap-y-3">
           {DATA.education.map((education, id) => (
@@ -119,7 +119,7 @@ export default function Page() {
 
       <section id="projects">
         <BlurFade delay={BLUR_FADE_DELAY * 7}>
-          <h2 className="text-xl font-semibold mb-10">My projects</h2>
+          <h2 className="text-xl font-semibold mb-5">My projects</h2>
         </BlurFade>
         <div className="space-y-12 w-full">
           <div className="grid  gap-10  mx-auto">
@@ -156,7 +156,7 @@ export default function Page() {
 
       <section id="contact">
         <BlurFade delay={BLUR_FADE_DELAY * 7}>
-          <h2 className="text-xl font-semibold mb-10">Get in Touch</h2>
+          <h2 className="text-xl font-semibold mb-5">Get in Touch</h2>
         </BlurFade>
         <div className="">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>

@@ -8,7 +8,7 @@ export const DATA = {
   location: "Melbourne VIC",
   locationLink: "https://maps.app.goo.gl/GURYmPbDApDaYdjB9",
   description:
-    "IT graduate (D) from Deakin University 🎓 Coding Instructor 🧑‍🏫 Freelancer 🧑🏼‍💻 150 rank on 8 ball pool Mobile 🎱 **Seeking Internship/graduate roles** 👀 Let's chat 💬",
+    "IT graduate (D) from Deakin University 🎓 Coding Instructor 🧑‍🏫 Freelance Web Developer 🧑🏼‍💻 150 rank on 8 ball pool Mobile 🎱 Seeking Internship/graduate roles 👀 Let's chat 💬",
   summary:
     "After i graduated in November 2023, i worked as a freelancer building website for small companies before i had the opprtunity to work as a programming instructor in the school of IT at Deakin University. I have been teaching programming languages like C, C++, HTML, CSS, JavaScript, SQL, and more. I have also been working on my own projects and have been learning new technologies like React, Node.js, Express, MongoDB, and more. I am currently seeking internship/graduate roles in the field of IT.",
   avatarUrl: "/me.png",
@@ -32,6 +32,7 @@ export const DATA = {
     "Kubernetes",
     "AWS",
     "GCP",
+    "Git/GitHub",
     "...",
   ],
   navbar: [
@@ -129,7 +130,7 @@ export const DATA = {
   projects: [
     {
       title: "DeveloperPortfol.io",
-      href: "https://invoice-by-rohit.vercel.app",
+      href: "https://developer-portfol-io.vercel.app/",
       dates: "July 2024 - Present",
       active: true,
       description:
@@ -148,16 +149,11 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://invoice-by-rohit.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Github",
-          href: "https://github.com/itsRohit47/Invoicy-full-stack-invoice-tracker-software",
+          href: "https://developer-portfol-io.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/invoicy.png",
+      image: "/dev.jpg",
       video: "",
     },
     {
@@ -189,7 +185,7 @@ export const DATA = {
       dates: "Mar 2023 - Nov -2023",
       active: true,
       description:
-        "ProjectEcho provides an innovative solution for conservationists and researchers that uses a network of microphone sensors and artificial intelligence to monitor, track, and analyze endangered animal movements in real time. The system is noninvasive, cost-effective, and works in low-light and cluttered environments, offering several advantages over traditional camera-based monitoring systems. The advanced technology behind ProjectEcho combines 5G networks, WiFi 6 mesh networking, satellite internet, and AI-driven sound classification to provide real-time data on animal movement and information on the geographical distribution of species. The data collected aims to increase species protection and support the long-term survival of endangered animals.",
+        "Contributed as a Software/Cloud Engineer. ProjectEcho provides an innovative solution for conservationists and researchers that uses a network of microphone sensors and artificial intelligence to monitor, track, and analyze endangered animal movements in real time. The system is noninvasive, cost-effective, and works in low-light and cluttered environments, offering several advantages over traditional camera-based monitoring systems. The advanced technology behind ProjectEcho combines 5G networks, WiFi 6 mesh networking, satellite internet, and AI-driven sound classification to provide real-time data on animal movement and information on the geographical distribution of species. The data collected aims to increase species protection and support the long-term survival of endangered animals.",
       technologies: [
         "HTML",
         "CSS",
