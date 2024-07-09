@@ -4,6 +4,7 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { TestimonialCard } from "@/components/testimonial-card";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -29,7 +30,7 @@ export default function Page() {
                 text={`Based in ${DATA.location}`}
               />
               <BlurFade delay={BLUR_FADE_DELAY * 4}>
-                <Markdown className=" leading-7">{DATA.description}</Markdown>
+                <Markdown className="leading-7">{DATA.description}</Markdown>
               </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
@@ -67,6 +68,23 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <div className="grid grid-cols-2 gap-5">
+          {DATA.testimonials.map((testimonial, id) => (
+            <BlurFade
+              key={testimonial.who}
+              delay={BLUR_FADE_DELAY * 6 + id * 0.0}
+              className={id === 0 ? "row-span-2" : ""}
+            >
+              <TestimonialCard
+                key={testimonial.who}
+                who={testimonial.who}
+                description={testimonial.des}
+              />
+            </BlurFade>
+          ))}
         </div>
       </section>
       <section id="work">
