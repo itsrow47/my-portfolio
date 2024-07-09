@@ -42,15 +42,15 @@ export const DATA = {
   testimonials: [
     {
       who: "Quentin Cooke (National Digital Development Lead at KBR)",
-      des: "Rohit was an invaluable member of the Project Echo leadership team due to his niche skillset in cloud computing and strong web development skills. Rohit leads by example, approaching all tasks with genuine enthusiasm and his refreshing sense of optimism is not easily diminished. He actively seeks out challenging problems and opportunities to hone his skills, then delivers intelligent solutions. He can be relied on to keep a cool head when time is tight and will go above and beyond when needed to support the team. Mentoring Rohit this past year has been very rewarding as I have seen him take feedback on board and apply it immediately. Rohit is certainly one to watch because he will be doing big things in the devops space in the near future.",
-    },
-    {
-      who: "Jules McCallum (Team Leader, ICT Support at Department of Premier and Cabinet, Vic)",
-      des: "Rohit was instrumental in helping me understand complex concepts during my programming subject with Deakin. Rohit would take the task, break it down for me so I understood and help me to come to a solution. I would highly recommend him.",
+      des: "Rohit was an **invaluable member of the Project Echo leadership team** due to his niche skillset in cloud computing and **strong web development skills**. Rohit **leads by example**, approaching all tasks with genuine enthusiasm and his refreshing sense of optimism is not easily diminished. He actively **seeks out challenging problems** and opportunities to hone his skills, then **delivers intelligent solutions**. He can be relied on to keep a cool head when time is tight and will go above and beyond when needed to support the team. Mentoring Rohit this past year has been very rewarding as **I have seen him take feedback on board and apply it immediately**. Rohit is certainly one to watch because he will be doing big things in the devops space in the near future.",
     },
     {
       who: "Indiah Smith (Paralegal at Ashurst LLP)",
-      des: "Rohit is an extremely competent and reliable individual. He took the time to assist me during my first year of university when I was struggling with certain units and devoted time towards helping me understand the concepts, which is a real testament to his patience and character. He is an excellent teacher with profound knowledge. He was able to troubleshoot and identify errors I was facing in addition to guiding me through ways to find a solution. Anyone who gets to work with Rohit will value his dedication and commitment.",
+      des: "Rohit is an extremely competent and **reliable individual**. He is highly devoted to improving his IT skills and committed to achieving the best results. He took the time to assist me during my first year of university when I was struggling with certain units and **devoted time towards helping me understand the concepts, which is a real testament to his patience and character**. He is an excellent teacher with profound knowledge. He was able to troubleshoot and identify errors I was facing in addition to guiding me through ways to find a solution. **Anyone who gets to work with Rohit will value his dedication and commitment.**",
+    },
+    {
+      who: "Jules McCallum (Team Leader, ICT Support at Department of Premier and Cabinet, Vic)",
+      des: "Rohit was instrumental in helping me understand complex concepts during my programming subject with Deakin. **Rohit would take the task, break it down for me so I understood and help me to come to a solution. I would highly recommend him.**",
     },
   ],
   contact: {

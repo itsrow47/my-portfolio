@@ -71,12 +71,12 @@ export default function Page() {
         </div>
       </section>
       <section id="testimonials">
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid lg:grid-cols-2 gap-5 ">
           {DATA.testimonials.map((testimonial, id) => (
             <BlurFade
               key={testimonial.who}
               delay={BLUR_FADE_DELAY * 6 + id * 0.0}
-              className={id === 0 ? "row-span-2" : ""}
+              className={id === 0 ? "lg:col-span-2" : ""}
             >
               <TestimonialCard
                 key={testimonial.who}
