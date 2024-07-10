@@ -54,7 +54,7 @@ export const DATA = {
     },
   ],
   contact: {
-    email: "hello@example.com",
+    email: "rohitbajaj13@yahoo.com",
     tel: "+123456789",
     social: {
       GitHub: {
@@ -92,7 +92,19 @@ export const DATA = {
       start: "Feb 2024",
       end: "Present",
       description:
-        "Roles and responsibilities include: - Preparing and delivering tutorials and help sessions - Preparing and marking assessments - Providing feedback to students - Responding to student queries - Attending meetings and training sessions - Participating in unit development and review.",
+        "Roles and responsibilities include: Preparing and delivering tutorials and help sessions - Preparing and marking assessments - Providing feedback to students - Responding to student queries - Attending meetings and training sessions - Participating in unit development and review.",
+    },
+    {
+      company: "Freelancer",
+      badges: ["Self Employed"],
+      href: "",
+      location: "Remote",
+      title: "Web Developer",
+      logoUrl: "",
+      start: "Jan 2023",
+      end: "Present",
+      description:
+        "I challenged myself to work with some real clients as a web developer and built websites for small companies. I used HTML, CSS, JavaScript, Node.js, Next.js, React, Headless CMS, and more. I learned how to communicate with clients, how to manage my time, how to work in a team, how to manage my finances, and more. I also learned how to market myself, how to find clients, how to negotiate prices, and more. I learned a lot about the business side of things and how to run a business. I also learned how to manage my own projects, how to manage my own time, how to manage my own finances, and more.",
     },
     {
       company: "DataBytes",

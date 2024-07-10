@@ -31,7 +31,7 @@ export const ResumeCard = ({
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const handleClick: React.MouseEventHandler<HTMLDivElement> = (e) => {
     if (description) {
       e.preventDefault();
       setIsExpanded(!isExpanded);
@@ -39,11 +39,7 @@ export const ResumeCard = ({
   };
 
   return (
-    <Link
-      href={href || "#"}
-      className="block cursor-pointer"
-      onClick={handleClick}
-    >
+    <div className="block cursor-pointer" onClick={handleClick}>
       <Card className="flex">
         <div className="flex-none ">
           <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
@@ -84,7 +80,9 @@ export const ResumeCard = ({
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs mt-1">{subtitle}</div>}
+            {subtitle && (
+              <div className="font-sans text-xs mt-1">{subtitle}</div>
+            )}
           </CardHeader>
           {description && (
             <motion.div
@@ -98,13 +96,13 @@ export const ResumeCard = ({
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm light:text-gray-600"
+              className="mt-2 text-xs sm:text-sm light:text-gray-600 cursor-auto"
             >
               {description}
             </motion.div>
           )}
         </div>
       </Card>
-    </Link>
+    </div>
   );
 };
