@@ -83,6 +83,18 @@ export const DATA = {
 
   work: [
     {
+      company: "Orp.ai",
+      href: "https://www.orpapp.com/",
+      badges: ["Startup"],
+      location: "Remote",
+      title: "Mobile Native app developer | Tech Lead",
+      logoUrl: "/orp.webp",
+      start: "Jul 2024",
+      end: "Present",
+      description:
+        "Currently i am also helping my friends build a mobile app called Orp, which is a Task management app that fuses gamification with productivity. The app is built using Flutter and Firebase. I am responsible for the development of the app, the design of the app, the testing of the app, the deployment of the app, the maintenance of the app, and more.",
+    },
+    {
       company: "Deakin University",
       href: "https://www.deakin.edu.au",
       badges: [],
