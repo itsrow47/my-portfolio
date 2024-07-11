@@ -159,7 +159,8 @@ export const DATA = {
     {
       school: "Deakin University",
       href: "https://deakin.edu.au/",
-      degree: "Bachelor of Information Technology",
+      degree:
+        "Bachelor of Information Technology (Distinction, 25% Scholarship)",
       logoUrl: "/deakin.png",
       start: "2021",
       end: "2023",
