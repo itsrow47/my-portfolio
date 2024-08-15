@@ -23,6 +23,8 @@ export const DATA = {
     "React",
     "Next.js",
     "Vue.js",
+    "Angular",
+    ".NET Framework",
     "C++",
     "C#",
     "PostgreSQL",
@@ -156,34 +158,6 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "DeveloperPortfol.io",
-      href: "https://developer-portfol-io.vercel.app/",
-      dates: "July 2024 - Present",
-      active: true,
-      description:
-        "Currently i am working on the MVP for my first ever SAAS product called DeveloperPortfol.io. Its a platform that allows developers to create a portfolio website in minutes. All they have to do is fill out their information through a visual editor, pick a template and the website will be generated for them. The website will be hosted on DeveloperPortfol.io and the developers can share the link with potential employers. The website will have a custom domain, analytics, and more. The website will be built using Next.js, TypeScript, PostgreSQL, TailwindCSS, and more. Unlike other website builders, the intention of this product is to not only allow developers showcase thier projects but also to build a projects database, new developers can take inspirations from.",
-      technologies: [
-        "HTML",
-        "CSS",
-        "Next.js",
-        "React",
-        "Typescript",
-        "PostgreSQL",
-        "TailwindCSS",
-        "Radix UI",
-        "Supabase",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://developer-portfol-io.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/dev.jpg",
-      video: "",
-    },
-    {
       title: "Invoice Tracker",
       href: "https://invoice-by-rohit.vercel.app",
       dates: "Apr 2024 - May 2024",
@@ -207,12 +181,12 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Project Echo",
-      href: "https://invoice-by-rohit.vercel.app",
+      title: "Project Echo - Real-time wildlife monitoring system",
+      href: "",
       dates: "Mar 2023 - Nov -2023",
       active: true,
       description:
-        "Contributed as a Software/Cloud Engineer. ProjectEcho provides an innovative solution for conservationists and researchers that uses a network of microphone sensors and artificial intelligence to monitor, track, and analyze endangered animal movements in real time. The system is noninvasive, cost-effective, and works in low-light and cluttered environments, offering several advantages over traditional camera-based monitoring systems. The advanced technology behind ProjectEcho combines 5G networks, WiFi 6 mesh networking, satellite internet, and AI-driven sound classification to provide real-time data on animal movement and information on the geographical distribution of species. The data collected aims to increase species protection and support the long-term survival of endangered animals.",
+        "Contributed as a Software/Cloud Engineer in the final year capstone project. ProjectEcho provides an innovative solution for conservationists and researchers that uses a network of microphone sensors and artificial intelligence to monitor, track, and analyze endangered animal movements in real time. The system is noninvasive, cost-effective, and works in low-light and cluttered environments, offering several advantages over traditional camera-based monitoring systems. The advanced technology behind ProjectEcho combines 5G networks, WiFi 6 mesh networking, satellite internet, and AI-driven sound classification to provide real-time data on animal movement and information on the geographical distribution of species. The data collected aims to increase species protection and support the long-term survival of endangered animals.",
       technologies: [
         "HTML",
         "CSS",
@@ -223,7 +197,8 @@ export const DATA = {
         "MongoDB",
         "Docker",
         "Kubernetes",
-        "AWS",
+        "Google Cloud Platform",
+        "Google Kubernetes Engine"
       ],
       links: [
         {
