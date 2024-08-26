@@ -48,7 +48,7 @@ export default function Page() {
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-semibold mb-5">About</h2>
+          <h2 className="text-xl font-semibold mb-5">I'm a</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <Markdown className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert">
@@ -58,7 +58,7 @@ export default function Page() {
       </section>
       <section id="skills">
         <BlurFade delay={BLUR_FADE_DELAY * 9}>
-          <h2 className="text-xl font-semibold mb-5">Skills</h2>
+          <h2 className="text-xl font-semibold mb-5">In my experience, I've used</h2>
         </BlurFade>
         <div className="flex min-h-0 flex-col gap-y-5">
           <div className="flex flex-wrap gap-2">
@@ -92,7 +92,7 @@ export default function Page() {
       </section>
       <section id="work">
         <BlurFade delay={BLUR_FADE_DELAY * 5}>
-          <h2 className="text-xl font-semibold mb-5">Work Experience</h2>
+          <h2 className="text-xl font-semibold mb-5">Places I contributed at</h2>
         </BlurFade>
         <div className="flex min-h-0 flex-col gap-y-5">
           {DATA.work.map((work, id) => (
@@ -117,7 +117,7 @@ export default function Page() {
       </section>
       <section id="education">
         <BlurFade delay={BLUR_FADE_DELAY * 7}>
-          <h2 className="text-xl font-semibold mb-5">Education</h2>
+          <h2 className="text-xl font-semibold mb-5">I "studied" 😉 from </h2>
         </BlurFade>
         <div className="flex min-h-0 flex-col gap-y-3">
           {DATA.education.map((education, id) => (
@@ -141,19 +141,19 @@ export default function Page() {
 
       <section id="contact">
         <BlurFade delay={BLUR_FADE_DELAY * 7}>
-          <h2 className="text-xl font-semibold mb-5">Get in Touch</h2>
+          <h2 className="text-xl font-semibold mb-5">Super chill, open for chat(ter)</h2>
         </BlurFade>
         <div className="">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <p className="">
-              Want to chat? Just shoot me a dm{" "}
+              Want to chat (go on, do it!)? Just shoot me a dm{" "}
               <Link
                 href={DATA.contact.social.email.url}
                 className="text-blue-500 hover:underline"
               >
                 on LinkedIn
               </Link>{" "}
-              and I&apos;ll respond asap.
+              and I&apos;ll (try to)respond asap.
             </p>
           </BlurFade>
         </div>
