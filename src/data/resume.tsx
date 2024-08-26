@@ -8,9 +8,9 @@ export const DATA = {
   location: "Melbourne, VIC, Australia",
   locationLink: "https://maps.app.goo.gl/GURYmPbDApDaYdjB9",
   description:
-    "IT graduate (D) from Deakin University 🎓 Coding Instructor 🧑‍🏫 Freelance Web Developer 🧑🏼‍💻 150 level on 8 ball pool Mobile 🎱 Seeking Internship/graduate roles 👀 Let's chat 💬",
+    "Software Engineer | Tutor @ Deakin University | 𝗢𝗽𝗲𝗻 𝘁𝗼 𝘄𝗼𝗿𝗸 𝗶𝗻 𝗩𝗜𝗖 𝗮𝗻𝗱 𝗡𝗦𝗪 [𝗰𝗹𝗼𝘂𝗱 𝗰𝗼𝗺𝗽𝘂𝘁𝗶𝗻𝗴 𝗮𝗻𝗱 𝘀𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗲𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴]",
   summary:
-    "After I graduated in Early 2024, I worked as a freelancer building websites for small companies before I had the opportunity to work as a programming instructor in the School of IT at Deakin University. I have been teaching programming languages like C++, C#,  HTML, CSS, JavaScript, SQL, and more. I have also been working on my own projects and have been learning new technologies like React, Next.js, Node.js, Express, MongoDB, and more. I am currently seeking internship/graduate roles in the field of IT.",
+    "I am a software engineer as per my job title, however, I am a builder and innovator at heart, and I love anything and everything about technology.",
   avatarUrl: "/me.png",
   skills: [
     "HTML",
@@ -110,7 +110,7 @@ export const DATA = {
     },
     {
       company: "DataBytes",
-      badges: ["Final Year Capstone Project"],
+      badges:[],
       href: "https://github.com/DataBytes-Organisation",
       location: "Remote",
       title: "Cloud Engineer Intern",
