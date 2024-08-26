@@ -15,14 +15,14 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10 mt-20 lg:mt-10">
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
+        <div className=" w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={`Hi, I'm ${DATA.name.split(" ")[0]} 🦁`}
               />
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
@@ -71,7 +71,10 @@ export default function Page() {
         </div>
       </section>
       <section id="testimonials">
-        <div className="grid lg:grid-cols-2 gap-5 ">
+        <BlurFade delay={BLUR_FADE_DELAY * 5}>
+          <h2 className="text-xl font-semibold mb-5">Not to brag but...</h2>
+        </BlurFade>
+        <div className="grid lg:grid-cols-2 gap-5">
           {DATA.testimonials.map((testimonial, id) => (
             <BlurFade
               key={testimonial.who}
@@ -133,43 +136,6 @@ export default function Page() {
               />
             </BlurFade>
           ))}
-        </div>
-      </section>
-
-      <section id="projects">
-        <BlurFade delay={BLUR_FADE_DELAY * 7}>
-          <h2 className="text-xl font-semibold mb-5">My projects</h2>
-        </BlurFade>
-        <div className="space-y-12 w-full">
-          <div className="grid  gap-10  mx-auto">
-            {DATA.projects.map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-              >
-                <ProjectCard
-                  href={project.href}
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
-              </BlurFade>
-            ))}
-          </div>
-          <p>
-            Find more{" "}
-            <Link
-              href={DATA.contact.social.GitHub.url}
-              className="text-blue-500 hover:underline"
-            >
-              on Github
-            </Link>{" "}
-          </p>
         </div>
       </section>
 
