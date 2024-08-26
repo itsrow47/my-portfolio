@@ -1,6 +1,5 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -58,7 +57,7 @@ export default function Page() {
       </section>
       <section id="skills">
         <BlurFade delay={BLUR_FADE_DELAY * 9}>
-          <h2 className="text-xl font-semibold mb-5">In my experience, I've used</h2>
+          <h2 className="text-xl font-semibold mb-5">I've used</h2>
         </BlurFade>
         <div className="flex min-h-0 flex-col gap-y-5">
           <div className="flex flex-wrap gap-2">
@@ -92,7 +91,7 @@ export default function Page() {
       </section>
       <section id="work">
         <BlurFade delay={BLUR_FADE_DELAY * 5}>
-          <h2 className="text-xl font-semibold mb-5">Places I contributed at</h2>
+          <h2 className="text-xl font-semibold mb-5">Places where my skills came handy</h2>
         </BlurFade>
         <div className="flex min-h-0 flex-col gap-y-5">
           {DATA.work.map((work, id) => (
@@ -146,7 +145,7 @@ export default function Page() {
         <div className="">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <p className="">
-              Want to chat (go on, do it!)? Just shoot me a dm{" "}
+              Want to chat? Just shoot me a dm{" "}
               <Link
                 href={DATA.contact.social.email.url}
                 className="text-blue-500 hover:underline"
