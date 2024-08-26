@@ -4,7 +4,7 @@ import { CodeIcon, HomeIcon } from "lucide-react";
 export const DATA = {
   name: "Rohit Bajaj",
   initials: "RB",
-  url: "",
+  url: "https://rohitbajaj.vercel.app/",
   location: "Melbourne, VIC, Australia",
   locationLink: "",
   description:
@@ -37,9 +37,7 @@ export const DATA = {
     "Git/GitHub",
     "...",
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-  ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   testimonials: [
     {
       who: "Quentin Cooke (National Digital Development Lead at KBR)",
