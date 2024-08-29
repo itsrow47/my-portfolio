@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Software Engineer | Tutor @ Deakin University | 𝗢𝗽𝗲𝗻 𝘁𝗼 𝘄𝗼𝗿𝗸 𝗶𝗻 𝗩𝗜𝗖 𝗮𝗻𝗱 𝗡𝗦𝗪 [𝗰𝗹𝗼𝘂𝗱 𝗰𝗼𝗺𝗽𝘂𝘁𝗶𝗻𝗴 𝗮𝗻𝗱 𝘀𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗲𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴]",
   summary:
-    "Software engineer (Job Title)and problem solver at heart, I love anything and everything about technology (and business)",
+    "Software engineer (Job Title) and problem solver at heart, I love anything and everything about technology (and business)",
   avatarUrl: "/me.png",
   skills: [
     "HTML",
