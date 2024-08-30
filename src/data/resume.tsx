@@ -82,7 +82,7 @@ export const DATA = {
 
   work: [
     {
-      company: "Sindy Labs",
+      company: "Sindy.ai",
       href: "https://www.sindy.ai/",
       badges: [],
       location: "Remote",
@@ -122,12 +122,12 @@ export const DATA = {
       badges: [],
       href: "https://github.com/DataBytes-Organisation",
       location: "Remote",
-      title: "Cloud Engineer",
+      title: "Cloud Solutions Architect",
       logoUrl: "/databytes.png",
-      start: "Jul 2023",
+      start: "Jun 2023",
       end: "Nov 2023",
       description:
-        "Led the cloud team to design and implement a cloud infrastructure using Google Cloud Platform. Worked with the development team to deploy applications to the cloud. Managed the cloud infrastructure, monitored performance, and ensured security. Developed scripts to automate tasks and improve efficiency. Provided support to the development team and other teams in the organization.",
+        "Led the cloud team to design and implement a cloud infrastructure using AWS and GCP. Worked with the development team to deploy applications to the cloud. Managed the cloud infrastructure, monitored performance, and ensured security. Developed scripts to automate tasks and improve efficiency. Provided support to the development team and other teams in the organization.",
     },
     {
       company: "DataBytes",
