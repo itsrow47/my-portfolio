@@ -88,7 +88,7 @@ export const DATA = {
       location: "Remote",
       title: "Software Engineer",
       logoUrl: "/sindy.gif",
-      start: "Feb 2024",
+      start: "Jun 2024",
       end: "Present",
       description:
         "Designed and developed the frontend using React and TailwindCSS. Worked closely with the development team to implement new features and fix bugs.",
@@ -100,7 +100,7 @@ export const DATA = {
       location: "Remote",
       title: "Tutor (School of IT)",
       logoUrl: "/deakin.png",
-      start: "Feb 2024",
+      start: "Mar 2024",
       end: "Present",
       description:
         "Mentor undergrads in the programming units, provide feedback on their work, and help them with their assignments. I also help the unit chair with the development of the unit, marking of assessments, and other administrative tasks.",
