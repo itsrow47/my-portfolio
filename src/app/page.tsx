@@ -23,7 +23,7 @@ export default function Page() {
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 🦁`}
               />
-              <div className="w-40 h-40 bg-orange-500 absolute  -right-28 -top-16 -z-10 blur-[100px] "></div>
+              <div className="w-40 h-40 bg-sky-500 dark:bg-orange-500 absolute  -right-28 -top-16 -z-10 blur-[100px] "></div>
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-sm"
