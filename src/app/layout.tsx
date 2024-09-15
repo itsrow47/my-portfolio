@@ -8,6 +8,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import BlurFade from "@/components/magicui/blur-fade";
+import Links from "@/components/ui/links";
 
 const fontSans = FontSans({
   subsets: ["latin"],

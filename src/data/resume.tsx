@@ -6,6 +6,8 @@ import {
   SparklesIcon,
   WrenchIcon,
   GraduationCapIcon,
+  AwardIcon,
+  InfoIcon,
 } from "lucide-react";
 
 export const DATA = {
@@ -47,10 +49,12 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/", icon: GraduationCapIcon, label: "Education" },
-    { href: "/", icon: CodeIcon, label: "Projects" },
     { href: "/", icon: WrenchIcon, label: "Skills" },
+    { href: "/", icon: CodeIcon, label: "Projects" },
     { href: "/", icon: Briefcase, label: "Work Experience" },
+    { href: "/", icon: AwardIcon, label: "Awards" },
     { href: "/", icon: SparklesIcon, label: "Testimonials" },
+    { href: "/", icon: InfoIcon, label: "About me" },
   ],
   testimonials: [
     {

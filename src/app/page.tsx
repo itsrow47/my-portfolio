@@ -5,10 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { TestimonialCard } from "@/components/testimonial-card";
 import { DATA } from "@/data/resume";
-import Link from "next/link";
 import Markdown from "react-markdown";
-import Navbar from "@/components/navbar";
-
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
