@@ -12,7 +12,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-5 mt-20 lg:mt-10">
+    <main className="flex flex-col space-y-5 mt-20 lg:mt-10">
       <section id="hero">
         <div className="w-full max-w-2xl ">
           <div className="gap-2 flex flex-col items-center justify-between space-y-5">
@@ -50,12 +50,12 @@ export default function Page() {
         </BlurFade>
       </section>
       <section id="links" className="">
-        <div className="dark:bg-white/50 bg-red-500/50 h-28 w-28 blur-3xl absolute top-10 -translate-y-1/2 left-1/2 -translate-x-1/2"></div>
+        <div className="dark:bg-white/50 bg-violet-500 h-28 w-28 blur-3xl absolute top-20 -z-10 left-1/2 -translate-x-1/2"></div>
         <div className="flex gap-x-5 items-center justify-center flex-col gap-y-2">
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 0 * 0.05}>
             {" "}
             <Link
-              href="/"
+              href="/about"
               className="text-sm text-blue-500 group flex items-center gap-x-1"
             >
               Find more about me
@@ -67,7 +67,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 1 * 0.05}>
             {" "}
             <Link
-              href="/"
+              href="/projects"
               className="text-sm text-blue-500 group flex items-center gap-x-1"
             >
               Check out my projects

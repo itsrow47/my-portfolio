@@ -7,14 +7,15 @@ export default function EducationPage() {
   return (
     <div>
       {" "}
-      <section id="education" className="py-20">
+      <section id="education" className="py-10">
         <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
           <div className="grid items-center text-center prose text-muted-foreground dark:prose-invert">
             <div className="text-sm w-full col-span-2">
               <h4 className="text-sm">2021 - 2023</h4>
-              <h2 className="">Bachelor of Information Technology</h2>
+              <h2 className="">Bachelor of Information Technology </h2>
               <p className="text-sm">Deakin University, Australia</p>
               <p className="text-sm leading-6">
+                <span className="font-semibold underline">Majored in Cloud Computing and Networking</span>,
                 Programming [HD], Data Science [D], Cyber Security [HD],
                 Bussiness Analytics [HD], Data & Information Management [D], Web
                 Development [D], Cloud Computing [D], Descrete Mathematics [HD],
@@ -75,8 +76,8 @@ export default function EducationPage() {
               <h2 className="">KG - Year 10</h2>
               <p className="text-base">St. Joseph's Convent School, India</p>
               <p className="text-sm">
-                The place where I made friends, learned to read and write,
-                and learned to be a good human being.
+                The place where I made friends, learned to read and write, and
+                learned to be a good human being.
               </p>
               <Link
                 href="/"

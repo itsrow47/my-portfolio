@@ -142,3 +142,22 @@ code[data-line-numbers-max-digits="2"] > [data-line]::before {
 code[data-line-numbers-max-digits="3"] > [data-line]::before {
   width: 3rem;
 }
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0; /* Make the thumb invisible */
+  height: 0;
+}
+
+input[type="range"]::-moz-range-thumb {
+  appearance: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="range"]::-ms-thumb {
+  appearance: none;
+  width: 0;
+  height: 0;
+}
