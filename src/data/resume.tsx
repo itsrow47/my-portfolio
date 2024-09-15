@@ -1,5 +1,12 @@
 import { Icons } from "@/components/icons";
-import { CodeIcon, HomeIcon } from "lucide-react";
+import {
+  Briefcase,
+  CodeIcon,
+  HomeIcon,
+  SparklesIcon,
+  WrenchIcon,
+  GraduationCapIcon,
+} from "lucide-react";
 
 export const DATA = {
   name: "Rohit Bajaj",
@@ -10,7 +17,7 @@ export const DATA = {
   description:
     "Software Engineer | Tutor @ Deakin University | 𝗢𝗽𝗲𝗻 𝘁𝗼 𝘄𝗼𝗿𝗸 𝗶𝗻 𝗩𝗜𝗖 𝗮𝗻𝗱 𝗡𝗦𝗪 [𝗰𝗹𝗼𝘂𝗱 𝗰𝗼𝗺𝗽𝘂𝘁𝗶𝗻𝗴 𝗮𝗻𝗱 𝘀𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗲𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴]",
   summary:
-    "Software engineer (Job Title) and problem solver at heart, I love anything and everything about technology (and business)",
+    "2023 IT graduate from Deakin University. I have a passion for web development and cloud computing. I have experience working with a range of technologies including HTML, CSS, JavaScript, Node.js, React, AWS, and GCP. I am currently working as a Software Engineer at Sindy.ai and as a Tutor at Deakin University. I am always looking for new opportunities to learn and grow as a developer.",
   avatarUrl: "/me.png",
   skills: [
     "HTML",
@@ -37,7 +44,14 @@ export const DATA = {
     "Git/GitHub",
     "...",
   ],
-  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/", icon: GraduationCapIcon, label: "Education" },
+    { href: "/", icon: CodeIcon, label: "Projects" },
+    { href: "/", icon: WrenchIcon, label: "Skills" },
+    { href: "/", icon: Briefcase, label: "Work Experience" },
+    { href: "/", icon: SparklesIcon, label: "Testimonials" },
+  ],
   testimonials: [
     {
       who: "Quentin Cooke (National Digital Development Lead at KBR)",
