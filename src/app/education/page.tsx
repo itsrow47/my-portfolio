@@ -47,7 +47,7 @@ export default function EducationPage() {
               <p className="text-base">
                 Cambridge International Public School, India
               </p>
-              <p className="text-sm w-96 mx-auto">
+              <p className="text-sm">
                 Physics [86], Chemistry [95], Mathematics [91], Computer Science
                 [94], English [96]
               </p>
@@ -74,7 +74,7 @@ export default function EducationPage() {
               <h4 className="text-sm">2005 - 2018</h4>
               <h2 className="">KG - Year 10</h2>
               <p className="text-base">St. Joseph's Convent School, India</p>
-              <p className="text-sm w-96 mx-auto">
+              <p className="text-sm">
                 The place where I made friends, learned to read and write,
                 and learned to be a good human being.
               </p>

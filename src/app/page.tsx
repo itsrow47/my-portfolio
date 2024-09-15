@@ -105,10 +105,10 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 4 * 0.05}>
             {" "}
             <Link
-              href="/"
+              href="/education"
               className="text-sm text-blue-500 group flex items-center gap-x-1"
             >
-              Deakin University
+              Education
               <div className="group-hover:translate-x-1 transition duration-300">
                 <ArrowUpRight size={16} />
               </div>
@@ -215,7 +215,7 @@ export default function Page() {
             ))}
           </div>
         </section> */}
-     
+
       {/* <section id="contact">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-semibold mb-5">
