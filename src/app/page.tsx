@@ -6,49 +6,155 @@ import { Badge } from "@/components/ui/badge";
 import { TestimonialCard } from "@/components/testimonial-card";
 import { DATA } from "@/data/resume";
 import Markdown from "react-markdown";
+import Link from "next/link";
 const BLUR_FADE_DELAY = 0.04;
+import { ArrowUpRight } from "lucide-react";
 
 export default function Page() {
   return (
-    <BlurFade delay={BLUR_FADE_DELAY}>
-      <main className="flex flex-col min-h-[100dvh] space-y-5 mt-20 lg:mt-10">
-        <section id="hero">
-          <div className="w-full max-w-2xl ">
-            <div className="gap-2 flex flex-col items-center justify-between space-y-5">
-              <BlurFade delay={BLUR_FADE_DELAY}>
-                <Avatar className="size-24 border">
-                  <AvatarImage
-                    alt={DATA.name}
-                    src={DATA.avatarUrl}
-                    className="object-cover"
-                  />
-                  <AvatarFallback>{DATA.initials}</AvatarFallback>
-                </Avatar>
-              </BlurFade>
-              <div className="flex-col flex flex-1 items-center space-y-5 relative w-full">
-                <BlurFadeText
-                  delay={BLUR_FADE_DELAY}
-                  className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                  yOffset={8}
-                  text={`${DATA.name}`}
+    <main className="flex flex-col min-h-[100dvh] space-y-5 mt-20 lg:mt-10">
+      <section id="hero">
+        <div className="w-full max-w-2xl ">
+          <div className="gap-2 flex flex-col items-center justify-between space-y-5">
+            <BlurFade delay={BLUR_FADE_DELAY}>
+              <Avatar className="size-24 border">
+                <AvatarImage
+                  alt={DATA.name}
+                  src={DATA.avatarUrl}
+                  className="object-cover"
                 />
-                <BlurFadeText
-                  delay={BLUR_FADE_DELAY}
-                  className="text-xs text-muted-foreground"
-                  text={`${DATA.location}`}
-                />
-              </div>
+                <AvatarFallback>{DATA.initials}</AvatarFallback>
+              </Avatar>
+            </BlurFade>
+            <div className="flex-col flex flex-1 items-center space-y-5 relative w-full">
+              <BlurFadeText
+                delay={BLUR_FADE_DELAY}
+                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                yOffset={8}
+                text={`${DATA.name}`}
+              />
+              <BlurFadeText
+                delay={BLUR_FADE_DELAY}
+                className="text-xs text-muted-foreground"
+                text={`${DATA.location}`}
+              />
             </div>
           </div>
-        </section>
-        <section id="about">
-          <BlurFade delay={BLUR_FADE_DELAY * 4}>
-            <Markdown className="prose max-w-full text-pretty text-center font-sans text-sm text-muted-foreground dark:prose-invert">
-              {DATA.summary}
-            </Markdown>
+        </div>
+      </section>
+      <section id="about">
+        <BlurFade delay={BLUR_FADE_DELAY}>
+          <Markdown className="prose max-w-full text-pretty text-center font-sans text-sm text-muted-foreground dark:prose-invert">
+            {DATA.summary}
+          </Markdown>
+        </BlurFade>
+      </section>
+      <section id="links" className="">
+        <div className="dark:bg-white/50 bg-red-500/50 h-28 w-28 blur-3xl absolute top-10 -translate-y-1/2 left-1/2 -translate-x-1/2"></div>
+        <div className="flex gap-x-5 items-center justify-center flex-col gap-y-2">
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 0 * 0.05}>
+            {" "}
+            <Link
+              href="/"
+              className="text-sm text-blue-500 group flex items-center gap-x-1"
+            >
+              Find more about me
+              <div className="group-hover:translate-x-1 transition duration-300">
+                <ArrowUpRight size={16} />
+              </div>
+            </Link>
           </BlurFade>
-        </section>
-        {/* <section id="skills">
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 1 * 0.05}>
+            {" "}
+            <Link
+              href="/"
+              className="text-sm text-blue-500 group flex items-center gap-x-1"
+            >
+              Check out my projects
+              <div className="group-hover:translate-x-1 transition duration-300">
+                <ArrowUpRight size={16} />
+              </div>
+            </Link>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 2 * 0.05}>
+            {" "}
+            <Link
+              href="/"
+              className="text-sm text-blue-500 group flex items-center gap-x-1"
+            >
+              My skills
+              <div className="group-hover:translate-x-1 transition duration-300">
+                <ArrowUpRight size={16} />
+              </div>
+            </Link>
+          </BlurFade>
+
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 3 * 0.05}>
+            {" "}
+            <Link
+              href="/"
+              className="text-sm text-blue-500 group flex items-center gap-x-1"
+            >
+              My work experience
+              <div className="group-hover:translate-x-1 transition duration-300">
+                <ArrowUpRight size={16} />
+              </div>
+            </Link>
+          </BlurFade>
+
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 4 * 0.05}>
+            {" "}
+            <Link
+              href="/"
+              className="text-sm text-blue-500 group flex items-center gap-x-1"
+            >
+              Deakin University
+              <div className="group-hover:translate-x-1 transition duration-300">
+                <ArrowUpRight size={16} />
+              </div>
+            </Link>
+          </BlurFade>
+
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 5 * 0.05}>
+            {" "}
+            <Link
+              href="/"
+              className="text-sm text-blue-500 group flex items-center gap-x-1"
+            >
+              Awards and Achievements{" "}
+              <div className="group-hover:translate-x-1 transition duration-300">
+                <ArrowUpRight size={16} />
+              </div>
+            </Link>
+          </BlurFade>
+
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 6 * 0.05}>
+            {" "}
+            <Link
+              href="/"
+              className="text-sm text-blue-500 group flex items-center gap-x-1"
+            >
+              Testimonials{" "}
+              <div className="group-hover:translate-x-1 transition duration-300">
+                <ArrowUpRight size={16} />
+              </div>
+            </Link>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 7 * 0.05}>
+            {" "}
+            <Link
+              href="/"
+              className="text-sm text-blue-500 group flex items-center gap-x-1"
+            >
+              Connect with me{" "}
+              <div className="group-hover:translate-x-1 transition duration-300">
+                <ArrowUpRight size={16} />
+              </div>
+            </Link>
+          </BlurFade>
+        </div>
+      </section>
+      {/* <section id="skills">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-semibold mb-5">I've used</h2>
           </BlurFade>
@@ -62,7 +168,7 @@ export default function Page() {
             </div>
           </div>
         </section> */}
-        {/* <section id="testimonials">
+      {/* <section id="testimonials">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-semibold mb-5">Not to brag but...</h2>
           </BlurFade>
@@ -82,7 +188,7 @@ export default function Page() {
             ))}
           </div>
         </section> */}
-        {/* <section id="work">
+      {/* <section id="work">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-semibold mb-5">
               Places where my skills came handy
@@ -109,31 +215,8 @@ export default function Page() {
             ))}
           </div>
         </section> */}
-        {/* <section id="education">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-semibold mb-5">I "studied" 😉 from </h2>
-          </BlurFade>
-          <div className="flex min-h-0 flex-col gap-y-3">
-            {DATA.education.map((education, id) => (
-              <BlurFade
-                key={education.school}
-                delay={BLUR_FADE_DELAY * 8 + id * 0.05}
-              >
-                <ResumeCard
-                  key={education.school}
-                  href={education.href}
-                  logoUrl={education.logoUrl}
-                  altText={education.school}
-                  title={education.school}
-                  subtitle={education.degree}
-                  period={`${education.start} - ${education.end}`}
-                />
-              </BlurFade>
-            ))}
-          </div>
-        </section> */}
-
-        {/* <section id="contact">
+     
+      {/* <section id="contact">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-semibold mb-5">
               Super chill, open for chat(ter)
@@ -154,7 +237,6 @@ export default function Page() {
             </BlurFade>
           </div>
         </section> */}
-      </main>
-    </BlurFade>
+    </main>
   );
 }

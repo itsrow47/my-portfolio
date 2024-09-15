@@ -16,7 +16,6 @@ interface ResumeCardProps {
   subtitle?: string;
   href?: string;
   badges?: readonly string[];
-  period: string;
   description?: string;
 }
 export const ResumeCard = ({
@@ -26,7 +25,6 @@ export const ResumeCard = ({
   subtitle,
   href,
   badges,
-  period,
   description,
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
@@ -41,16 +39,6 @@ export const ResumeCard = ({
   return (
     <div className="block cursor-pointer" onClick={handleClick}>
       <Card className="flex">
-        <div className="flex-none ">
-          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
-            <AvatarImage
-              src={logoUrl}
-              alt={altText}
-              className="object-contain"
-            />
-            <AvatarFallback>{altText[0]}</AvatarFallback>
-          </Avatar>
-        </div>
         <div className="flex-grow ml-4 items-center flex-col group">
           <CardHeader>
             <div className="flex items-center justify-between gap-x-2 text-base">
@@ -76,9 +64,6 @@ export const ResumeCard = ({
                   )}
                 />
               </h3>
-              <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
-                {period}
-              </div>
             </div>
             {subtitle && (
               <div className="font-sans text-xs mt-1">{subtitle}</div>
@@ -101,6 +86,16 @@ export const ResumeCard = ({
               {description}
             </motion.div>
           )}
+        </div>
+        <div className="flex-none ">
+          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+            <AvatarImage
+              src={logoUrl}
+              alt={altText}
+              className="object-contain"
+            />
+            <AvatarFallback>{altText[0]}</AvatarFallback>
+          </Avatar>
         </div>
       </Card>
     </div>

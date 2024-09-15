@@ -13,13 +13,8 @@ import {
 export const DATA = {
   name: "Rohit Bajaj",
   initials: "RB",
-  url: "https://rohitbajaj.vercel.app/",
   location: "Melbourne, VIC, Australia",
-  locationLink: "",
-  description:
-    "Software Engineer | Tutor @ Deakin University | 𝗢𝗽𝗲𝗻 𝘁𝗼 𝘄𝗼𝗿𝗸 𝗶𝗻 𝗩𝗜𝗖 𝗮𝗻𝗱 𝗡𝗦𝗪 [𝗰𝗹𝗼𝘂𝗱 𝗰𝗼𝗺𝗽𝘂𝘁𝗶𝗻𝗴 𝗮𝗻𝗱 𝘀𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗲𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴]",
-  summary:
-    "2023 IT graduate from Deakin University. I have a passion for web development and cloud computing. I have experience working with a range of technologies including HTML, CSS, JavaScript, Node.js, React, AWS, and GCP. I am currently working as a Software Engineer at Sindy.ai and as a Tutor at Deakin University. I am always looking for new opportunities to learn and grow as a developer.",
+  summary: "2023 Technology Gradaute from Deakin University",
   avatarUrl: "/me.png",
   skills: [
     "HTML",
@@ -48,13 +43,13 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/", icon: GraduationCapIcon, label: "Education" },
-    { href: "/", icon: WrenchIcon, label: "Skills" },
-    { href: "/", icon: CodeIcon, label: "Projects" },
-    { href: "/", icon: Briefcase, label: "Work Experience" },
-    { href: "/", icon: AwardIcon, label: "Awards" },
-    { href: "/", icon: SparklesIcon, label: "Testimonials" },
-    { href: "/", icon: InfoIcon, label: "About me" },
+    { href: "/education", icon: GraduationCapIcon, label: "Education" },
+    { href: "/skills", icon: WrenchIcon, label: "Skills" },
+    { href: "/projects", icon: CodeIcon, label: "Projects" },
+    { href: "/experience", icon: Briefcase, label: "Work Experience" },
+    { href: "/awards", icon: AwardIcon, label: "Awards" },
+    { href: "/testimonials", icon: SparklesIcon, label: "Testimonials" },
+    { href: "/about", icon: InfoIcon, label: "About me" },
   ],
   testimonials: [
     {
