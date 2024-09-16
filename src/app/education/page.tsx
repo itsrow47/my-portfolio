@@ -1,22 +1,33 @@
 import BlurFade from "@/components/magicui/blur-fade";
 const BLUR_FADE_DELAY = 0.04;
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, GraduationCap } from "lucide-react";
 
 export default function EducationPage() {
   return (
     <div>
       {" "}
-      <section id="education" className="py-10">
+      <section id="education" className="mt-5">
+        <BlurFade
+          delay={BLUR_FADE_DELAY * 0 * 0.05}
+          className="flex items-start justify-center"
+        >
+          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4">
+            <GraduationCap size={32}></GraduationCap>
+          </div>
+        </BlurFade>
+        <br></br>
         <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
           <div className="grid items-center text-center prose text-muted-foreground dark:prose-invert">
             <div className="text-sm w-full col-span-2">
               <h4 className="text-sm">2021 - 2023</h4>
               <h2 className="">Bachelor of Information Technology </h2>
-              <p className="text-sm">Deakin University, Australia</p>
-              <p className="text-sm leading-6">
-                <span className="font-semibold underline">Majored in Cloud Computing and Networking</span>,
-                Programming [HD], Data Science [D], Cyber Security [HD],
+              <p className="text-xs lg:text-sm">Deakin University, Australia</p>
+              <p className="text-xs lg:text-sm leading-6">
+                <span className="font-semibold underline">
+                  Majored in Cloud Computing and Networking
+                </span>
+                , Programming [HD], Data Science [D], Cyber Security [HD],
                 Bussiness Analytics [HD], Data & Information Management [D], Web
                 Development [D], Cloud Computing [D], Descrete Mathematics [HD],
                 Computer Networks [D], Object Oriented Programming [HD],
@@ -45,10 +56,10 @@ export default function EducationPage() {
             <div className="text-sm w-full col-span-2">
               <h4 className="text-sm">2018 - 2020</h4>
               <h2 className="">Year 11 - Year 12</h2>
-              <p className="text-base">
+              <p className="text-xs lg:text-sm">
                 Cambridge International Public School, India
               </p>
-              <p className="text-sm">
+              <p className="text-xs lg:text-sm">
                 Physics [86], Chemistry [95], Mathematics [91], Computer Science
                 [94], English [96]
               </p>
@@ -74,8 +85,10 @@ export default function EducationPage() {
             <div className="text-sm w-full col-span-2">
               <h4 className="text-sm">2005 - 2018</h4>
               <h2 className="">KG - Year 10</h2>
-              <p className="text-base">St. Joseph's Convent School, India</p>
-              <p className="text-sm">
+              <p className="text-xs lg:text-sm">
+                St. Joseph's Convent School, India
+              </p>
+              <p className="text-xs lg:text-sm">
                 The place where I made friends, learned to read and write, and
                 learned to be a good human being.
               </p>

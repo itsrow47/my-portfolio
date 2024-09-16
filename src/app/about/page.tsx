@@ -1,30 +1,36 @@
 import BlurFade from "@/components/magicui/blur-fade";
 const BLUR_FADE_DELAY = 0.04;
 import AudioPlayer from "@/components/ui/audio";
+import { Info, InfoIcon } from "lucide-react";
 
 export default function AboutPage() {
   return (
     <div>
       {" "}
-      <section id="about" className="py-10">
+      <section id="about" className="">
+        <br></br>
+        <br></br>
         <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
           <AudioPlayer />
           <br></br>
-          <div className="grid items-center prose text-muted-foreground dark:prose-invert text-sm mx-auto">
-            <p>[hi play above track as you read this]</p>
-            <p>
-              Hi, I am Rohit, and i'm from the India you don't see on TV, a very
-              small town in the state of Punjab where education is a luxury and
-              a privilege. From what i remember from my childhood, i have always
-              seen my parents working hard to make ends meet, and i have always
-              been inspired by their work ethic. They have made impossible seem
-              possible, despite the fact my parents never had the opportunity to
-              go to a good school or college. The sacrifices they made for me to
-              be where i am today is something i can never repay. Who i am
-              because of them.
+          <div className="grid items-center prose text-muted-foreground dark:prose-invert text-sm mx-auto text-center">
+            <p className="text-center">
+              [ Hi, play above track as you read this ! ]
             </p>
+            <p>Hi, My name is Rohit, and i'm from the India. </p>
             <p>
-              Growing up, i am seen the people around me struggling with
+              India, that you don't see on TV, a very small town in the state of
+              Punjab where education is a luxury and a privilege. From what i
+              remember from my childhood, i have always seen my parents working
+              hard to make ends meet, and i have always been inspired by their
+              work ethic. They have made impossible seem possible, despite the
+              fact my parents never had the opportunity to go to a good school
+              or college. The sacrifices they made for me to be where i am today
+              is something i can never repay.
+            </p>
+            <p>Who i am is because of them!</p>
+            <p>
+              Growing up, i have seen the people around me struggling with
               technology, and at one point, i built a reputation for myself as a
               tech guru in my family and neighborhood.
             </p>
@@ -70,7 +76,7 @@ export default function AboutPage() {
               experience so far, this curiosity led me to study Information
               Technology.
             </p>
-            <p>To Be Continued...</p>
+            <p className="text-center">To be continued...</p>
           </div>
         </BlurFade>
       </section>

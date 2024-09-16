@@ -12,7 +12,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Page() {
   return (
-    <main className="flex flex-col space-y-5 mt-20 lg:mt-10">
+    <main className="flex flex-col space-y-5 mt-5">
       <section id="hero">
         <div className="w-full max-w-2xl ">
           <div className="gap-2 flex flex-col items-center justify-between space-y-5">
@@ -44,13 +44,32 @@ export default function Page() {
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY}>
-          <Markdown className="prose max-w-full text-pretty text-center font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
+          <div className="prose max-w-full text-pretty text-center font-sans text-sm text-muted-foreground dark:prose-invert">
+            I am a 2023 Technology graduate from Deakin University, currently
+            working as a Casual Academic in the School of IT at Deakin. I bring
+            over 9 months of hands-on{" "}
+            <a href="/experience" className="no-underline text-blue-500">
+              experience
+            </a>{" "}
+            from internships in various tech roles, including IT Support, Web
+            Development, and Cloud Engineering/Cloud Solutions Architecture,
+            particularly within startup environments.
+          </div>
+          <br></br>
+          <div className="prose max-w-full text-pretty text-center font-sans text-sm text-muted-foreground dark:prose-invert">
+            I am actively seeking a full-time position in the tech industry to
+            launch my career. I am open to relocation across Australia at my own
+            expense, and I am eager to contribute{" "}
+            <a href="/skills" className="no-underline text-blue-500">
+              my skills
+            </a>{" "}
+            and expertise to a dynamic and innovative team.
+          </div>
         </BlurFade>
       </section>
+      <br></br>
       <section id="links" className="">
-        <div className="dark:bg-white/50 bg-violet-500 h-28 w-28 blur-3xl absolute top-20 -z-10 left-1/2 -translate-x-1/2"></div>
+        <div className="dark:bg-white/50 bg-violet-500/50 h-28 w-28 blur-3xl absolute top-20 -z-10 left-1/2 -translate-x-1/2"></div>
         <div className="flex gap-x-5 items-center justify-center flex-col gap-y-2">
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 0 * 0.05}>
             {" "}
@@ -79,7 +98,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 2 * 0.05}>
             {" "}
             <Link
-              href="/"
+              href="/skills"
               className="text-sm text-blue-500 group flex items-center gap-x-1"
             >
               My skills
@@ -92,7 +111,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 3 * 0.05}>
             {" "}
             <Link
-              href="/"
+              href="/experience"
               className="text-sm text-blue-500 group flex items-center gap-x-1"
             >
               My work experience
@@ -118,7 +137,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 5 * 0.05}>
             {" "}
             <Link
-              href="/"
+              href="/awards"
               className="text-sm text-blue-500 group flex items-center gap-x-1"
             >
               Awards and Achievements{" "}
@@ -131,7 +150,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 6 * 0.05}>
             {" "}
             <Link
-              href="/"
+              href="/testimonials"
               className="text-sm text-blue-500 group flex items-center gap-x-1"
             >
               Testimonials{" "}
@@ -143,7 +162,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 7 * 0.05}>
             {" "}
             <Link
-              href="/"
+              href="/connect"
               className="text-sm text-blue-500 group flex items-center gap-x-1"
             >
               Connect with me{" "}
@@ -154,20 +173,7 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-      {/* <section id="skills">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-semibold mb-5">I've used</h2>
-          </BlurFade>
-          <div className="flex min-h-0 flex-col gap-y-5">
-            <div className="flex flex-wrap gap-2">
-              {DATA.skills.map((skill, id) => (
-                <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                  <Badge key={skill}>{skill}</Badge>
-                </BlurFade>
-              ))}
-            </div>
-          </div>
-        </section> */}
+     
       {/* <section id="testimonials">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-semibold mb-5">Not to brag but...</h2>

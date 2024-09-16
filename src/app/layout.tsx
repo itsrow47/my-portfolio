@@ -58,17 +58,13 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="system">
           <TooltipProvider delayDuration={0}>
             <Navbar />
             {children}
             <Analytics />
           </TooltipProvider>
         </ThemeProvider>
-        <br></br>
-        <div className="text-sm text-center mt-20">
-          Please note, this Project is a work in progress, thanks!
-        </div>
       </body>
     </html>
   );

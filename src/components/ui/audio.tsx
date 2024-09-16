@@ -5,7 +5,7 @@ import { PlayIcon, PauseIcon, Pause } from "lucide-react";
 const AudioPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(80);
+  const [duration, setDuration] = useState(82);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const progressRef = useRef<HTMLInputElement | null>(null);
@@ -67,7 +67,7 @@ const AudioPlayer = () => {
   }, []);
 
   return (
-    <div className="w-full bg-zinc-100 dark:bg-zinc-900 text-sm px-4 py-2 rounded-lg">
+    <div className="w-[92%] mx-auto bg-zinc-100 dark:bg-zinc-900 text-sm px-4 py-2 rounded-lg">
       <audio
         ref={audioRef}
         src="/intro.mp3"
