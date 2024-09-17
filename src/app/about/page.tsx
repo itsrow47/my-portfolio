@@ -1,15 +1,24 @@
 import BlurFade from "@/components/magicui/blur-fade";
 const BLUR_FADE_DELAY = 0.04;
 import AudioPlayer from "@/components/ui/audio";
-import { Info, InfoIcon } from "lucide-react";
+import { InfoIcon } from "lucide-react";
 
 export default function AboutPage() {
   return (
     <div>
       {" "}
       <section id="about" className="">
+        <BlurFade
+          delay={BLUR_FADE_DELAY * 0 * 0.05}
+          className="flex items-start justify-center"
+        >
+          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4">
+            <InfoIcon size={32}></InfoIcon>
+          </div>
+        </BlurFade>
         <br></br>
-        <br></br>
+       
+
         <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
           <AudioPlayer />
           <br></br>

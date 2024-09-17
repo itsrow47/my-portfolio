@@ -10,6 +10,14 @@ const AudioPlayer = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const progressRef = useRef<HTMLInputElement | null>(null);
 
+  // Set volume to 50% by default when the component mounts
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio) {
+      audio.volume = 0.1; // Set volume to 50%
+    }
+  }, []);
+
   // Toggle play/pause
   const togglePlayPause = () => {
     const audio = audioRef.current;

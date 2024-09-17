@@ -7,7 +7,7 @@ export default function EducationPage() {
   return (
     <div>
       {" "}
-      <section id="education" className="mt-5">
+      <section id="education" className="">
         <BlurFade
           delay={BLUR_FADE_DELAY * 0 * 0.05}
           className="flex items-start justify-center"

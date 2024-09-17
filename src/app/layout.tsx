@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import Grid from "@/components/ui/grid";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -60,8 +61,10 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system">
           <TooltipProvider delayDuration={0}>
+            <div className="dark:bg-white/50 h-28 w-28 blur-3xl absolute top-20 -z-10 left-1/2 -translate-x-1/2"></div>
+            <Grid></Grid>
             <Navbar />
-            {children}
+            <div className="mt-20 lg:mt-10">{children}</div>
             <Analytics />
           </TooltipProvider>
         </ThemeProvider>

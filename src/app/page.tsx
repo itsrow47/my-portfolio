@@ -12,7 +12,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Page() {
   return (
-    <main className="flex flex-col space-y-5 mt-5">
+    <main className="flex flex-col space-y-5">
       <section id="hero">
         <div className="w-full max-w-2xl ">
           <div className="gap-2 flex flex-col items-center justify-between space-y-5">
@@ -44,7 +44,7 @@ export default function Page() {
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY}>
-          <div className="prose max-w-full text-pretty text-center font-sans text-sm text-muted-foreground dark:prose-invert">
+          <div className="prose max-w-full text-pretty text-center font-sans text-xs lg:text-sm text-muted-foreground dark:prose-invert">
             I am a 2023 Technology graduate from Deakin University, currently
             working as a Casual Academic in the School of IT at Deakin. I bring
             over 9 months of hands-on{" "}
@@ -56,7 +56,7 @@ export default function Page() {
             particularly within startup environments.
           </div>
           <br></br>
-          <div className="prose max-w-full text-pretty text-center font-sans text-sm text-muted-foreground dark:prose-invert">
+          <div className="prose max-w-full text-pretty text-center font-sans text-xs lg:text-sm text-muted-foreground dark:prose-invert">
             I am actively seeking a full-time position in the tech industry to
             launch my career. I am open to relocation across Australia at my own
             expense, and I am eager to contribute{" "}
@@ -69,7 +69,6 @@ export default function Page() {
       </section>
       <br></br>
       <section id="links" className="">
-        <div className="dark:bg-white/50 bg-violet-500/50 h-28 w-28 blur-3xl absolute top-20 -z-10 left-1/2 -translate-x-1/2"></div>
         <div className="flex gap-x-5 items-center justify-center flex-col gap-y-2">
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 0 * 0.05}>
             {" "}

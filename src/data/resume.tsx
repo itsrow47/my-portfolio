@@ -3,7 +3,7 @@ import {
   Briefcase,
   CodeIcon,
   HomeIcon,
-  SparklesIcon,
+  QuoteIcon,
   WrenchIcon,
   GraduationCapIcon,
   AwardIcon,
@@ -51,7 +51,7 @@ export const DATA = {
     { href: "/projects", icon: CodeIcon, label: "Projects" },
     { href: "/experience", icon: Briefcase, label: "Work Experience" },
     { href: "/awards", icon: AwardIcon, label: "Awards" },
-    { href: "/testimonials", icon: SparklesIcon, label: "Testimonials" },
+    { href: "/testimonials", icon: QuoteIcon, label: "Testimonials" },
     { href: "/about", icon: InfoIcon, label: "About me" },
   ],
   testimonials: [
