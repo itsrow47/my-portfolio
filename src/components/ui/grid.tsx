@@ -59,10 +59,10 @@ export default function Grid() {
         <div className="border-t border-r border-l   w-6 h-6"></div>{" "}
         <div className="border-t border-r border-l   w-6 h-6"></div>{" "}
         <div className="border-t border-r border-l  w-6 h-6"></div>{" "}
-        <div className="border-t border-r border-l  w-6 h-6"></div>{" "}
-        <div className="border-t border-r border-l  w-6 h-6"></div>{" "}
-        <div className="border-t border-r border-l  w-6 h-6"></div>{" "}
-        <div className="border-t border-r border-l  w-6 h-6"></div>{" "}
+        <div className="border-t border-r border-l border-zinc-100/20 w-6 h-6"></div>{" "}
+        <div className="border-t border-r border-l border-zinc-100/20 w-6 h-6"></div>{" "}
+        <div className="border-t border-r border-l border-zinc-100/20 w-6 h-6"></div>{" "}
+        <div className="border-t border-r border-l border-zinc-100/20  w-6 h-6"></div>{" "}
         <div className="border-t border-r border-l  w-6 h-6"></div>{" "}
         <div className="border-t border-r border-l   w-6 h-6"></div>{" "}
         <div className="border-t border-r border-l   w-6 h-6"></div>{" "}

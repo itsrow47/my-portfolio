@@ -22,7 +22,7 @@ export default function AboutPage() {
         <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
           <AudioPlayer />
           <br></br>
-          <div className="grid items-center prose text-muted-foreground dark:prose-invert text-sm mx-auto text-center">
+          <div className="grid items-center prose text-muted-foreground dark:prose-invert text-xs lg:text-sm mx-auto text-center">
             <p className="text-center">
               [ Hi, play above track as you read this ! ]
             </p>
