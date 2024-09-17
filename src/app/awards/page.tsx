@@ -16,7 +16,7 @@ export default function ProjectsPage() {
           delay={BLUR_FADE_DELAY * 0 * 0.05}
           className="flex items-start justify-center"
         >
-          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4">
+          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4 mb-8">
             <AwardIcon size={32}></AwardIcon>
           </div>
         </BlurFade>

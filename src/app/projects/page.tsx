@@ -15,25 +15,21 @@ export default function ProjectsPage() {
           delay={BLUR_FADE_DELAY * 0 * 0.05}
           className="flex items-start justify-center"
         >
-          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4">
+          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4 mb-8">
             <CodeIcon size={32}></CodeIcon>
           </div>
         </BlurFade>
         <br></br>
         <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
           <div className="flex flex-col gap-y-3 items-center text-center justify-normal">
-            <h4 className="font-bold text-base">This is the project</h4>
+            <h4 className="font-bold text-base">My website on AWS</h4>
             <p>
-              Proident cupidatat eiusmod dolor cupidatat ad in magna labore
-              occaecat ipsum ad sunt labore pariatur. Duis ipsum esse anim est
-              commodo ad non dolore. Irure ea anim ex irure laborum velit
-              occaecat elit. Sunt sit dolor irure excepteur occaecat. Commodo
-              enim minim labore est minim nisi id ullamco. Non id ullamco enim
-              culpa. Pariatur nisi deserunt ut cillum culpa sint qui dolor
-              officia aute est.
+              I migrated my website from vercel to AWS on an EC2 instance, this
+              involved setting up the instance, installing the necessary
+              software, configuring the server and deploying the website.
             </p>
             <Link
-              href="/"
+              href="/projects/website-on-aws"
               className="text-xs text-blue-500 group flex items-center gap-x-1 no-underline"
             >
               Read More
@@ -42,7 +38,7 @@ export default function ProjectsPage() {
               </div>
             </Link>
             <br></br>
-            <div className="border-b w-96"></div>
+            <div className="border-b w-52"></div>
           </div>
         </BlurFade>
       </section>

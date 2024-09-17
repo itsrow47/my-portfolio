@@ -1,20 +1,16 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { TestimonialCard } from "@/components/testimonial-card";
 import { DATA } from "@/data/resume";
-import Markdown from "react-markdown";
 import Link from "next/link";
 const BLUR_FADE_DELAY = 0.04;
 import { ArrowUpRight } from "lucide-react";
 
 export default function Page() {
   return (
-    <main className="flex flex-col space-y-5">
+    <main className="flex flex-col space-y-5 ">
       <section id="hero">
-        <div className="w-full max-w-2xl ">
+        <div className=" ">
           <div className="gap-2 flex flex-col items-center justify-between space-y-5">
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-24 border">
@@ -164,7 +160,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 7 * 0.05}>
             {" "}
             <Link
-              href="/connect"
+              href="https://www.linkedin.com/in/iamrohitbajaj/"
               className="text-sm text-blue-500 group flex items-center gap-x-1"
             >
               Connect with me{" "}
@@ -175,76 +171,6 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-
-      {/* <section id="testimonials">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-semibold mb-5">Not to brag but...</h2>
-          </BlurFade>
-          <div className="grid lg:grid-cols-2 gap-5">
-            {DATA.testimonials.map((testimonial, id) => (
-              <BlurFade
-                key={testimonial.who}
-                delay={BLUR_FADE_DELAY * 6 + id * 0.0}
-                className={id === 0 ? "lg:col-span-2" : ""}
-              >
-                <TestimonialCard
-                  key={testimonial.who}
-                  who={testimonial.who}
-                  description={testimonial.des}
-                />
-              </BlurFade>
-            ))}
-          </div>
-        </section> */}
-      {/* <section id="work">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-semibold mb-5">
-              Places where my skills came handy
-            </h2>
-          </BlurFade>
-          <div className="flex min-h-0 flex-col gap-y-5">
-            {DATA.work.map((work, id) => (
-              <BlurFade
-                key={work.company}
-                delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-              >
-                <ResumeCard
-                  key={work.company}
-                  logoUrl={work.logoUrl}
-                  altText={work.company}
-                  title={work.company}
-                  subtitle={work.title}
-                  href={work.href}
-                  badges={work.badges}
-                  period={`${work.start} - ${work.end ?? "Present"}`}
-                  description={work.description}
-                />
-              </BlurFade>
-            ))}
-          </div>
-        </section> */}
-
-      {/* <section id="contact">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-semibold mb-5">
-              Super chill, open for chat(ter)
-            </h2>
-          </BlurFade>
-          <div className="">
-            <BlurFade delay={BLUR_FADE_DELAY * 16}>
-              <p className="">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact.social.email.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  on LinkedIn
-                </Link>{" "}
-                and I&apos;ll (try to) respond asap.
-              </p>
-            </BlurFade>
-          </div>
-        </section> */}
     </main>
   );
 }

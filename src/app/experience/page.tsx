@@ -16,7 +16,7 @@ export default function ExperiencePage() {
           delay={BLUR_FADE_DELAY * 0 * 0.05}
           className="flex items-start justify-center"
         >
-          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4">
+          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4 mb-8">
             <Briefcase size={32}></Briefcase>
           </div>
         </BlurFade>
@@ -85,7 +85,7 @@ export default function ExperiencePage() {
                 alt="deakin logo"
                 width={1000}
                 height={1000}
-                className="w-20 h-20 rounded-full mx-auto bg-white"
+                className="w-20 h-20 rounded-full mx-auto border dark:bg-white"
               ></Image>
               <h4 className="text-sm">Jul 2023 - Nov 2023</h4>
               <h2 className="">Junior Cloud Engineer/Solutions Architect</h2>
@@ -120,7 +120,7 @@ export default function ExperiencePage() {
                 alt="deakin logo"
                 width={1000}
                 height={1000}
-                className="w-20 h-20 rounded-full mx-auto bg-white"
+                className="w-20 h-20 rounded-full mx-auto border dark:bg-white"
               ></Image>
               <h4 className="text-sm">Mar 2023 - Jun 2023</h4>
               <h2 className="">Junior Web Developer</h2>
@@ -149,7 +149,7 @@ export default function ExperiencePage() {
                 alt="deakin logo"
                 width={1000}
                 height={1000}
-                className="w-20 h-20 rounded-full mx-auto object-contain bg-white"
+                className="w-20 h-20 rounded-full mx-auto object-contain border dark:bg-white"
               ></Image>
               <h4 className="text-sm">Mar 2023 - Jun 2023</h4>
               <h2 className="">Field Support Technician</h2>

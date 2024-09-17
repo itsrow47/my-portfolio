@@ -7,19 +7,22 @@ export default function TestimonialsPage() {
   return (
     <div>
       {" "}
-      <section id="testimonials" className="">
+      <section
+        id="testimonials"
+        className="prose text-muted-foreground dark:prose-invert text-xs lg:text-sm mx-auto text-center text-wrap"
+      >
         <BlurFade
           delay={BLUR_FADE_DELAY * 0 * 0.05}
           className="flex items-start justify-center"
         >
-          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4 mb-3">
+          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4 mb-8">
             <QuoteIcon size={32}></QuoteIcon>
           </div>
         </BlurFade>
         <br></br>
         <BlurFade
           delay={BLUR_FADE_DELAY * 0 * 0.05}
-          className="grid items-center w-full prose text-muted-foreground dark:prose-invert text-xs lg:text-sm mx-auto text-center text-wrap"
+          className="grid items-center w-full "
         >
           <div className="">
             <p className="">

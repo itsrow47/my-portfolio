@@ -13,12 +13,13 @@ export default function AboutPage() {
       >
         <BlurFade
           delay={BLUR_FADE_DELAY * 0 * 0.05}
-          className="flex items-start justify-center"
+          className="flex items-start justify-center mb-8"
         >
-          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4 mb-8">
+          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4">
             <InfoIcon size={32}></InfoIcon>
           </div>
         </BlurFade>
+        <br></br>
         <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
           <p className="text-center">
             [ Hi, play below the track as you read this ! ]

@@ -64,7 +64,7 @@ export default function RootLayout({
             <div className="dark:bg-white/50 h-28 w-28 blur-3xl absolute top-20 -z-10 left-1/2 -translate-x-1/2"></div>
             <Grid></Grid>
             <Navbar />
-            <div className="mt-20 lg:mt-10 w-full max-w-2xl">{children}</div>
+            <div className="mt-20 lg:mt-10 w-full max-w-2xl mx-auto">{children}</div>
             <Analytics />
           </TooltipProvider>
         </ThemeProvider>

@@ -13,7 +13,7 @@ export default function EducationPage() {
           delay={BLUR_FADE_DELAY * 0 * 0.05}
           className="flex items-start justify-center"
         >
-          <div className="prose text-muted-foreground dark:prose-invert text-sm mx-auto bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4">
+          <div className="prose text-muted-foreground dark:prose-invert text-sm mx-auto bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4 mb-8">
             <GraduationCap size={32}></GraduationCap>
           </div>
         </BlurFade>
