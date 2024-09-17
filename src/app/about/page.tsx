@@ -7,25 +7,25 @@ export default function AboutPage() {
   return (
     <div>
       {" "}
-      <section id="about" className="">
+      <section
+        id="about"
+        className="prose text-muted-foreground dark:prose-invert text-xs lg:text-sm mx-auto text-center"
+      >
         <BlurFade
           delay={BLUR_FADE_DELAY * 0 * 0.05}
           className="flex items-start justify-center"
         >
-          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4">
+          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4 mb-8">
             <InfoIcon size={32}></InfoIcon>
           </div>
         </BlurFade>
-        <br></br>
-       
-
         <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
+          <p className="text-center">
+            [ Hi, play below the track as you read this ! ]
+          </p>
           <AudioPlayer />
           <br></br>
-          <div className="grid items-center prose text-muted-foreground dark:prose-invert text-xs lg:text-sm mx-auto text-center">
-            <p className="text-center">
-              [ Hi, play above track as you read this ! ]
-            </p>
+          <div className="grid items-center ">
             <p>Hi, My name is Rohit, and i'm from the India. </p>
             <p>
               India, that you don't see on TV, a very small town in the state of

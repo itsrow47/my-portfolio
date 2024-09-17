@@ -2,6 +2,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 const BLUR_FADE_DELAY = 0.04;
 import Link from "next/link";
 import { ArrowUpRight, GraduationCap } from "lucide-react";
+import Image from "next/image";
 
 export default function EducationPage() {
   return (
@@ -12,7 +13,7 @@ export default function EducationPage() {
           delay={BLUR_FADE_DELAY * 0 * 0.05}
           className="flex items-start justify-center"
         >
-          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4">
+          <div className="prose text-muted-foreground dark:prose-invert text-sm mx-auto bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4">
             <GraduationCap size={32}></GraduationCap>
           </div>
         </BlurFade>
@@ -20,13 +21,20 @@ export default function EducationPage() {
         <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
           <div className="grid items-center text-center prose text-muted-foreground dark:prose-invert">
             <div className="text-sm w-full col-span-2">
+              <Image
+                src="/deakin.png"
+                alt="deakin logo"
+                width={1000}
+                height={1000}
+                className="w-20 h-20 rounded-full mx-auto"
+              ></Image>
               <h4 className="text-sm">2021 - 2023</h4>
               <h2 className="">Bachelor of Information Technology </h2>
               <p className="text-xs lg:text-sm">Deakin University, Australia</p>
-              <p className="text-xs lg:text-sm leading-6">
-                <span className="font-semibold underline">
+              <p className="text-xs lg:text-sm leading-8">
+                <strong>
                   Majored in Cloud Computing and Networking
-                </span>
+                </strong>
                 , Programming [HD], Data Science [D], Cyber Security [HD],
                 Bussiness Analytics [HD], Data & Information Management [D], Web
                 Development [D], Cloud Computing [D], Descrete Mathematics [HD],
@@ -35,7 +43,7 @@ export default function EducationPage() {
                 [D], 3D Animation [D], Capstone Project [HD]
               </p>
               <Link
-                href="/"
+                href="/awards"
                 className="text-sm text-blue-500 group flex items-center gap-x-1 mx-auto w-max no-underline"
               >
                 View Awards

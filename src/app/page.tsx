@@ -45,9 +45,12 @@ export default function Page() {
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY}>
           <div className="prose max-w-full text-pretty text-center font-sans text-xs lg:text-sm text-muted-foreground dark:prose-invert">
-            I am a 2023 Technology graduate from Deakin University, currently
-            working as a Casual Academic in the School of IT at Deakin. I bring
-            over 9 months of hands-on{" "}
+            I am a 2023 Technology graduate from{" "}
+            <a href="/education" className="no-underline text-blue-500">
+              Deakin University
+            </a>
+            , currently working as a Casual Academic in the School of IT at
+            Deakin. I bring over 9 months of hands-on{" "}
             <a href="/experience" className="no-underline text-blue-500">
               experience
             </a>{" "}
@@ -172,7 +175,7 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-     
+
       {/* <section id="testimonials">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-semibold mb-5">Not to brag but...</h2>

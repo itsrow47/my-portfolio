@@ -12,7 +12,7 @@ export default function TestimonialsPage() {
           delay={BLUR_FADE_DELAY * 0 * 0.05}
           className="flex items-start justify-center"
         >
-          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4">
+          <div className="bg-zinc-100 dark:bg-zinc-900 w-max rounded-full p-4 mb-3">
             <QuoteIcon size={32}></QuoteIcon>
           </div>
         </BlurFade>
@@ -26,8 +26,8 @@ export default function TestimonialsPage() {
               Growing up, i have seen my dad building relationships with our
               customers and i am truly familiar with the fact that more than
               anything we do, it always comes down to the people, weather its
-              bussiness, or life. Below you can find some good words people i
-              worked or studied with have said about me!
+              bussiness, or life. Below you can find some good words, people i
+              worked or studied with, have said about me!
             </p>
             <Link
               href="https://www.linkedin.com/in/iamrohitbajaj/"
@@ -56,7 +56,7 @@ export default function TestimonialsPage() {
                 because he will be doing big things in the devops space in the
                 near future."
               </p>
-              <p className="">
+              <p className="text-xs w-1/2 mx-auto">
                 <strong>Quentin Cooke</strong>, National Digital Development
                 Lead at KBR
               </p>
@@ -68,9 +68,9 @@ export default function TestimonialsPage() {
                 take the task, break it down for me so I understood and help me
                 to come to a solution. I would highly recommend him."
               </p>
-              <p className="">
+              <p className="text-xs w-1/2 mx-auto">
                 <strong>Jules McCallum</strong>, Team Leader, ICT Support at
-                Department of Premier and Cabinet (Victoria)
+                Department of Premier and Cabinet, VIC
               </p>
             </div>
             <div className="mt-20">
@@ -87,7 +87,7 @@ export default function TestimonialsPage() {
                 who gets to work with Rohit will value his dedication and
                 commitment."
               </p>
-              <p className="">
+              <p className="text-xs">
                 <strong>Indiah Smith</strong>, Paralegal, Ashurst, WA
               </p>
             </div>
