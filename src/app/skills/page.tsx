@@ -20,7 +20,7 @@ export default function SkillsPage() {
         <br></br>
         <BlurFade
           delay={BLUR_FADE_DELAY * 0 * 0.05}
-          className="prose text-muted-foreground dark:prose-invert text-sm mx-auto text-center"
+          className="prose text-muted-foreground dark:prose-invert text-xs lg:text-sm mx-auto text-center"
         >
           <p className="">
             When i think of my skills, it sometimes get hard to pin point what i
