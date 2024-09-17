@@ -87,7 +87,7 @@ export default function TestimonialsPage() {
                 who gets to work with Rohit will value his dedication and
                 commitment."
               </p>
-              <p className="text-xs">
+              <p className="text-xs text-xs w-1/2 mx-auto">
                 <strong>Indiah Smith</strong>, Paralegal, Ashurst, WA
               </p>
             </div>

@@ -31,7 +31,7 @@ export default function EducationPage() {
               <h4 className="text-sm">2021 - 2023</h4>
               <h2 className="">Bachelor of Information Technology </h2>
               <p className="text-xs lg:text-sm">Deakin University, Australia</p>
-              <p className="text-xs lg:text-sm leading-8">
+              <p className="text-xs lg:text-sm leading-6">
                 <strong>
                   Majored in Cloud Computing and Networking
                 </strong>
