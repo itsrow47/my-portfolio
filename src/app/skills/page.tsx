@@ -24,13 +24,14 @@ export default function SkillsPage() {
         >
           <p className="">
             When i think of my skills, it sometimes get hard to pin point what i
-            am good at because i have worked on so many different things, given
-            my degree in IT, i have an introductory knowledge of a lot of
-            things, but below you have find a list of things that i have worked
-            on and i am confident in, altough i believe that i can learn
-            anything depending on the context, with minimal training.
+            am good at because i have worked on so many different technologies,
+            given my degree in IT, i have an introductory knowledge of a lot of
+            areas of tech including software development, cloud computing, data
+            science, cyber security etc. But to narrow down the scope, below you
+            can find a list of technologies i am most confident in, altough, i
+            believe that i can learn anything depending on the context, with
+            minimal training.
           </p>
-          <p>Let's broadly categirize them:</p>
           <div>
             <h4>Cloud Computing and DevOps</h4>
             <br></br>
@@ -77,7 +78,7 @@ export default function SkillsPage() {
             </Link>
           </div>
           <br></br>
-          <p>* Learning these days</p>
+          <p className="text-xs">* Learning these days</p>
         </BlurFade>
       </section>
     </div>
