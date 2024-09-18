@@ -9,7 +9,7 @@ export default function ProjectsPage() {
     <div className="mt-5">
       {" "}
       <section
-        id="about"
+        id="awards"
         className="prose text-muted-foreground dark:prose-invert text-xs lg:text-sm mx-auto"
       >
         <BlurFade
@@ -87,7 +87,10 @@ export default function ProjectsPage() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4 * 0.05} className="">
           {" "}
-          <div className="h-28 w-[2px] bg-black/25 border-dotted border dark:bg-white/50 rounded-full mx-auto my-3"></div>
+          <div
+            className="h-28 w-[2px] bg-black/25 border-dotted border dark:bg-white/50 rounded-full mx-auto my-3"
+            id="school"
+          ></div>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
           <div className="grid items-center text-center prose text-muted-foreground dark:prose-invert">

@@ -8,6 +8,13 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Grid from "@/components/ui/grid";
+import { Dock, DockIcon } from "@/components/magicui/dock";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -64,7 +71,24 @@ export default function RootLayout({
             <div className="dark:bg-white/50 h-28 w-28 blur-3xl absolute top-20 -z-10 left-1/2 -translate-x-1/2"></div>
             <Grid></Grid>
             <Navbar />
-            <div className="mt-20 lg:mt-10 w-full max-w-2xl mx-auto">{children}</div>
+            <div className="z-30 fixed pointer-events-none bottom-4 left-4 w-max mx-auto flex h-full max-h-14 lg:hidden">
+              <Dock className="pointer-events-auto mx-auto flex h-full items-center px-1 bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] ">
+                <DockIcon>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <ModeToggle />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Theme</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </DockIcon>
+              </Dock>
+            </div>
+            <div className="mt-20 lg:mt-10 w-full max-w-2xl mx-auto">
+              {children}
+            </div>
+
             <Analytics />
           </TooltipProvider>
         </ThemeProvider>

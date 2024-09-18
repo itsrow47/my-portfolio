@@ -1,10 +1,11 @@
 import BlurFade from "@/components/magicui/blur-fade";
 const BLUR_FADE_DELAY = 0.04;
-import { CodeIcon, AlertCircleIcon } from "lucide-react";
+import { CodeIcon, AlertCircleIcon, ArrowLeftIcon } from "lucide-react";
 import { PROJECTS } from "@/data/projects";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
-export default function ProjectDetailsPage({
+export default async function ProjectDetailsPage({
   params,
 }: {
   params: { slug: string };
@@ -19,6 +20,7 @@ export default function ProjectDetailsPage({
       </div>
     );
   }
+
   return (
     <section
       id="about"
@@ -33,7 +35,18 @@ export default function ProjectDetailsPage({
         </div>
       </BlurFade>
       <br></br>
-      <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
+      <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05}>
+        <Link
+          href="/projects"
+          className="text-xs text-blue-500 group flex items-center justify-center gap-x-1 no-underline"
+        >
+          <div className="group-hover:-translate-x-1 transition duration-300">
+            <ArrowLeftIcon size={16} />
+          </div>
+          All projects
+        </Link>
+      </BlurFade>
+      <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="mt-3">
         <h1> {project.title}</h1>
         <p>{project.description}</p>
         <div className="flex gap-2 items-center justify-center">

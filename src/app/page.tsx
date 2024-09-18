@@ -5,6 +5,7 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 const BLUR_FADE_DELAY = 0.04;
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -38,6 +39,47 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="hero" className="space-y-5">
+        {" "}
+        <div className="flex items-center justify-center gap-x-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 0 * 0.05}>
+            <Image
+              src="/deakin.png"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 2 * 0.05}>
+            <Image
+              src="/acs.webp"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 4 * 0.05}>
+            <Image
+              src="/365.png"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full"
+            ></Image>
+          </BlurFade>{" "}
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 6 * 0.05}>
+            <Image
+              src="/awscloudprac.png"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full"
+            ></Image>
+          </BlurFade>
+        </div>
+      </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY}>
           <div className="prose max-w-full text-pretty text-center font-sans text-xs lg:text-sm text-muted-foreground dark:prose-invert">
@@ -52,7 +94,10 @@ export default function Page() {
             </a>{" "}
             from internships in various tech roles, including IT Support, Web
             Development, and Cloud Engineering/Cloud Solutions Architecture,
-            particularly within startup environments.
+            particularly within startup environments working on{" "}
+            <a href="/projects" className="no-underline text-blue-500">
+              award winning projects.
+            </a>
           </div>
           <br></br>
           <div className="prose max-w-full text-pretty text-center font-sans text-xs lg:text-sm text-muted-foreground dark:prose-invert">
@@ -105,7 +150,6 @@ export default function Page() {
               </div>
             </Link>
           </BlurFade>
-
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 3 * 0.05}>
             {" "}
             <Link
@@ -131,8 +175,20 @@ export default function Page() {
               </div>
             </Link>
           </BlurFade>
-
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 5 * 0.05}>
+            {" "}
+            <Link
+              href="/certs"
+              className="text-sm text-blue-500 group flex items-center gap-x-1"
+            >
+              Certifications
+              <div className="group-hover:translate-x-1 transition duration-300">
+                <ArrowUpRight size={16} />
+              </div>
+            </Link>
+          </BlurFade>
+
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 6 * 0.05}>
             {" "}
             <Link
               href="/awards"
@@ -145,7 +201,7 @@ export default function Page() {
             </Link>
           </BlurFade>
 
-          <BlurFade delay={BLUR_FADE_DELAY * 10 + 6 * 0.05}>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 7 * 0.05}>
             {" "}
             <Link
               href="/testimonials"
@@ -157,7 +213,7 @@ export default function Page() {
               </div>
             </Link>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 10 + 7 * 0.05}>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 8 * 0.05}>
             {" "}
             <Link
               href="https://www.linkedin.com/in/iamrohitbajaj/"

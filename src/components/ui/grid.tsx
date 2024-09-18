@@ -1,17 +1,17 @@
 export default function Grid() {
   return (
     <>
-      <div className="grid grid-cols-12 absolute left-1/2 -translate-x-1/2 w-full lg:w-max gap-1">
+      <div className="grid grid-cols-12 absolute left-1/2 -translate-x-1/2 w-full lg:w-max gap-1 sm:mt-5 md:mt-0">
         {/* row1 */}
         <div className="border-b border-r    w-6 h-6"></div>{" "}
         <div className="border-b border-r border-l   w-6 h-6"></div>{" "}
         <div className="border-b border-r border-l   w-6 h-6"></div>{" "}
+        <div className="border-b border-r border-r-zinc-100/20 border-b-zinc-100/20  w-6 h-6"></div>{" "}
         <div className="border-b border-r border-l border-zinc-100/20  w-6 h-6"></div>{" "}
         <div className="border-b border-r border-l border-zinc-100/20  w-6 h-6"></div>{" "}
         <div className="border-b border-r border-l border-zinc-100/20  w-6 h-6"></div>{" "}
         <div className="border-b border-r border-l border-zinc-100/20  w-6 h-6"></div>{" "}
-        <div className="border-b border-r border-l border-zinc-100/20  w-6 h-6"></div>{" "}
-        <div className="border-b border-r border-l border-zinc-100/20  w-6 h-6"></div>{" "}
+        <div className="border-b border-r border-l border-l-zinc-100/20 border-b-zinc-100/20  w-6 h-6"></div>{" "}
         <div className="border-b border-r border-l   w-6 h-6"></div>{" "}
         <div className="border-b border-r border-l   w-6 h-6"></div>{" "}
         <div className="border-b border-l   w-6 h-6"></div>

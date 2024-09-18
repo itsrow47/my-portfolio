@@ -36,8 +36,11 @@ export default function Navbar() {
             </Tooltip>
           </DockIcon>
         ))}
-        <Separator orientation="vertical" className="h-full py-2" />
-        <DockIcon>
+        <Separator
+          orientation="vertical"
+          className="h-full py-2 hidden md:block"
+        />
+        <DockIcon className="hidden md:flex">
           <Tooltip>
             <TooltipTrigger asChild>
               <ModeToggle />

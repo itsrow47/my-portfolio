@@ -8,7 +8,10 @@ export default function SkillsPage() {
   return (
     <div>
       {" "}
-      <section id="education" className="mt-5">
+      <section
+        id="education"
+        className="prose text-muted-foreground dark:prose-invert text-xs lg:text-sm mx-auto text-center"
+      >
         <BlurFade
           delay={BLUR_FADE_DELAY * 0 * 0.05}
           className="flex items-start justify-center"
@@ -18,10 +21,7 @@ export default function SkillsPage() {
           </div>
         </BlurFade>
         <br></br>
-        <BlurFade
-          delay={BLUR_FADE_DELAY * 0 * 0.05}
-          className="prose text-muted-foreground dark:prose-invert text-xs lg:text-sm mx-auto text-center"
-        >
+        <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
           <p className="">
             When i think of my skills, it sometimes get hard to pin point what i
             am good at because i have worked on so many different technologies,

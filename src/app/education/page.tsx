@@ -29,13 +29,11 @@ export default function EducationPage() {
                 className="w-20 h-20 rounded-full mx-auto"
               ></Image>
               <h4 className="text-sm">2021 - 2023</h4>
-              <h2 className="">Bachelor of Information Technology </h2>
+              <h2 className="">Bachelor of Information Technology (Distinction)</h2>
               <p className="text-xs lg:text-sm">Deakin University, Australia</p>
               <p className="text-xs lg:text-sm leading-6">
-                <strong>
-                  Majored in Cloud Computing and Networking
-                </strong>
-                , Programming [HD], Data Science [D], Cyber Security [HD],
+                <strong>Majored in Cloud Computing and Networking</strong>,
+                Programming [HD], Data Science [D], Cyber Security [HD],
                 Bussiness Analytics [HD], Data & Information Management [D], Web
                 Development [D], Cloud Computing [D], Descrete Mathematics [HD],
                 Computer Networks [D], Object Oriented Programming [HD],
@@ -72,7 +70,7 @@ export default function EducationPage() {
                 [94], English [96]
               </p>
               <Link
-                href="/"
+                href="/awards#school"
                 className="text-sm text-blue-500 group flex items-center gap-x-1 mx-auto w-max no-underline"
               >
                 View Awards
@@ -101,7 +99,7 @@ export default function EducationPage() {
                 learned to be a good human being.
               </p>
               <Link
-                href="/"
+                href="/awards#school"
                 className="text-sm text-blue-500 group flex items-center gap-x-1 mx-auto w-max no-underline"
               >
                 View Awards
