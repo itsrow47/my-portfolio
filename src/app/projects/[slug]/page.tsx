@@ -1,26 +1,18 @@
 import BlurFade from "@/components/magicui/blur-fade";
 const BLUR_FADE_DELAY = 0.04;
 import { CodeIcon, AlertCircleIcon, ArrowLeftIcon } from "lucide-react";
-import { PROJECTS } from "@/data/projects";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import { DATA } from "@/data/resume";
+import { getContent } from "@/lib/utils";
 
 export default async function ProjectDetailsPage({
   params,
 }: {
   params: { slug: string };
 }) {
-  const project = Object.values(PROJECTS).find((project) => {
-    return project.href === params.slug;
-  });
-  if (!project) {
-    return (
-      <div className="prose text-muted-foreground dark:prose-invert text-sm mx-auto mt-96 text-center flex items-center justify-center gap-1 text-red-500">
-        <AlertCircleIcon size={20}></AlertCircleIcon> Project Not Found
-      </div>
-    );
-  }
-
+  const project = DATA.projects.find((project) => project.url === params.slug);
+  const markdownContent = project?.url ? await getContent(project.url) : "";
   return (
     <section
       id="about"
@@ -47,16 +39,19 @@ export default async function ProjectDetailsPage({
         </Link>
       </BlurFade>
       <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="mt-3">
-        <h1> {project.title}</h1>
-        <p>{project.description}</p>
-        <div className="flex gap-2 items-center justify-center">
-          {project.tags.map((tag) => (
+        <h1> {project?.name}</h1>
+        <p>{project?.description}</p>
+        <div className="flex gap-2 items-center justify-center flex-wrap">
+          {project?.tags.map((tag) => (
             <Badge key={tag} className="">
               {tag}
             </Badge>
           ))}
         </div>
-        <div></div>
+        <br></br>
+        <div className="prose text-muted-foreground dark:prose-invert">
+          {markdownContent.name}
+        </div>
       </BlurFade>
     </section>
   );

@@ -63,7 +63,7 @@ export default function ProjectsPage() {
                   <div className="text-sm w-full col-span-2">
                     <h2 className="">{project.name}</h2>
                     <p className="text-xs lg:text-sm">{project.description}</p>
-                    <div className="flex gap-2 items-center justify-center">
+                    <div className="flex gap-2 items-center justify-center flex-wrap">
                       {project.tags.map((tag) => (
                         <Badge key={tag} className="">
                           {tag}
@@ -72,7 +72,7 @@ export default function ProjectsPage() {
                     </div>
                     <br></br>
                     <Link
-                      href={project.url}
+                      href={`/projects/${project.url}`}
                       className="text-sm text-blue-500 group flex items-center gap-x-1 mx-auto w-max no-underline"
                     >
                       View Project

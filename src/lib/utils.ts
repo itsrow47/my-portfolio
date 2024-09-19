@@ -35,3 +35,13 @@ export function formatDate(date: string) {
     return `${fullDate} (${yearsAgo}y ago)`;
   }
 }
+
+export async function getContent(slug: string) {
+  try {
+    const data = await fetch("https://api.vercel.app/pokemon/1");
+    return data.json();
+  } catch (error) {
+    console.error(error);
+    return "";
+  }
+}
