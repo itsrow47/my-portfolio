@@ -87,22 +87,52 @@ export default function ExperiencePage() {
                 className="w-20 h-20 rounded-full mx-auto border dark:bg-white"
               ></Image>
               <h4 className="text-sm">Jul 2023 - Nov 2023</h4>
-              <h2 className="">Junior Cloud Engineer/Solutions Architect</h2>
+              <h2 className="">Cloud Engineer/Solutions Architect</h2>
               <p className="text-xs lg:text-sm">
                 DataBytes, Deakin University, Australia
               </p>
               <p className="text-xs lg:text-sm">
-                I have designed and implemented cloud-based solutions using a
-                variety of technologies to build well-architected
-                infrastructures that ensure cost optimization, security, high
-                performance, and scalability. I have also conducted tests on
-                several AWS and GCP technologies, including IAM, EC2, S3, RDS,
-                Route53, Document DB, Cloud Run, Firebase, Docker, and
-                Kubernetes to assess and select the most suitable cloud services
-                for business needs. Additionally, I worked closely with
-                stakeholders such as executives, product owners, developers, and
-                IT teams to understand their requirements and transform their
-                vision into comprehensive cloud architectures.
+                During the capstone year, I worked as a Cloud Engineer/Solutions
+                Architect for{" "}
+                <a href="/projects" className="text-blue-500 no-underline">
+                  Project Echo
+                </a>
+                , a biodiversity conservation project that seeks to detect
+                sounds of endangered species by converting audio to
+                melspectograms and analysing them using Convolutional Neural
+                Networks (CNNs) implemented using tensorflow. This project was
+                aimed to support{" "}
+                <a
+                  href="https://ccma.vic.gov.au/projects/wild-otways/"
+                  target="_blank"
+                  className="text-blue-500 no-underline"
+                >
+                  the Australian Government's initiative
+                </a>{" "}
+                to protect endangered species located in the wild otways
+                national park.
+              </p>
+              <p>
+                My contributions include helping our team to make the best use
+                of cloud, we operated mainly on AWS and GCP as a hybrid cloud
+                architecture, and I was responsible for the deployment of the 5
+                major components of the project, which are: Echo HMI (Human
+                Machine Interface), Echo API, Echo Store (Database), Echo Engine
+                (The Machine learning model server), and Echo MQTT (Message Que
+                Service) on the cloud. For that i needed to test various cloud
+                services from both the providers and choose the best one for our
+                use case. We end up using GCP Kubernetes Engine to deploy our 5
+                major components.
+              </p>
+              <p>
+                Additionaly, i was responsible for providing access to the team
+                to the cloud services and managing the cloud budget, including
+                the cost estimation and monitoring of the cloud services.
+              </p>
+              <p>
+                Our Project won the{" "}
+                <strong>National and State iAwards 2023</strong>
+                for the best Student and Education solution category.
               </p>
             </div>
           </div>
@@ -127,11 +157,25 @@ export default function ExperiencePage() {
                 DataBytes, Deakin University, Australia
               </p>
               <p className="text-xs lg:text-sm">
-                Worked across the tech stack utilizing modern tools and
-                technologies including HTML, CSS, JavaScript (Frontend), and a
-                Node/Express (Server), Python (FastAPI), MongoDB, MQTT, and
-                Python based IoT simulator to develop the software while
-                adhering to agile best practices.
+                During the capstone year, I joined the DataBytes team as a
+                Junior Web Developer, where I was responsible for developing the
+                front end of{" "}
+                <a href="/projects" className="text-blue-500 no-underline">
+                  Project Echo
+                </a>{" "}
+                HMI (Human Machine Interface) using HTML, CSS, and JavaScript. I
+                also worked on the back-end of the project using Node.js and
+                Express.js to develop the API for the project.{" "}
+              </p>
+
+              <p>
+                This was my first ever formal experience working in a team on a
+                software development project, I learned how to operate in an
+                agile setting and participate in ceremonies that include daily
+                standups, weekly sync-up meetings and so on. We used team
+                collaboration tools such as Trello for project management,
+                GitHub for version control and collaborative development, Visual
+                Studio Code for writing the code and so on.
               </p>
             </div>
           </div>
