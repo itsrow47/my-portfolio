@@ -10,6 +10,7 @@ const withMDX = nextMDX({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  transpilePackages: ["next-mdx-remote"],
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   experimental: {
     appDir: true,

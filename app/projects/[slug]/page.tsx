@@ -5,8 +5,7 @@ import { CodeIcon, ArrowLeftIcon } from "lucide-react";
 import { Badge } from "../../../components/ui/badge";
 import Link from "next/link";
 import { DATA } from "../../../data/resume";
-import Welcome from "../../../data/project_data/mdx-page.mdx";
-import { getContent } from "../../../lib/utils";
+import { MDXRemote } from "next-mdx-remote/rsc";
 
 export default async function ProjectDetailsPage({
   params,
@@ -14,7 +13,6 @@ export default async function ProjectDetailsPage({
   params: { slug: string };
 }) {
   const project = DATA.projects.find((project) => project.url === params.slug);
-  const markdownContent = project?.url ? await getContent(project.url) : "";
   return (
     <section
       id="about"
@@ -53,7 +51,12 @@ export default async function ProjectDetailsPage({
         <br></br>
         <div className="">
           <br></br>
-          <Welcome></Welcome>
+          <MDXRemote
+            source={`# Hello World
+
+      This is from Server Components!
+      `}
+          />{" "}
         </div>
       </BlurFade>
     </section>

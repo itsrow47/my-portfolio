@@ -41,7 +41,7 @@ export default function Page() {
       </section>
       <section id="hero" className="space-y-5">
         {" "}
-        <div className="flex items-center justify-center gap-x-3">
+        <div className="flex items-center justify-center gap-x-3 flex-wrap w-96 gap-2 mx-auto">
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 0 * 0.05}>
             <Image
               src="/deakin.png"
@@ -72,6 +72,87 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 6 * 0.05}>
             <Image
               src="/awscloudprac.png"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 8 * 0.05}>
+            <Image
+              src="/awssa.png"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 8 * 0.05}>
+            <Image
+              src="/github.png"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full bg-white"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 12 * 0.05}>
+            <Image
+              src="/Jenkins.png"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 14 * 0.05}>
+            <Image
+              src="/Terraform.png"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 16 * 0.05}>
+            <Image
+              src="/linux.png"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full bg-zinc-50/20"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 18 * 0.05}>
+            <Image
+              src="/ansible.png"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full bg-white"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 20 * 0.05}>
+            <Image
+              src="/python.svg"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 22 * 0.05}>
+            <Image
+              src="/lambda.svg"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 24 * 0.05}>
+            <Image
+              src="/k8.svg"
               alt="acs logo"
               width={1000}
               height={1000}

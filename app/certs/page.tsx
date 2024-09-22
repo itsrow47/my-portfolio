@@ -26,6 +26,34 @@ export default function CertificatesPage() {
             <div className="grid items-center text-center prose text-muted-foreground dark:prose-invert">
               <div className="text-sm w-full col-span-2">
                 <Image
+                  src="/hashicert.png"
+                  alt="deakin logo"
+                  width={1000}
+                  height={1000}
+                  className="w-24 h-24 mx-auto "
+                ></Image>
+                <h4 className="text-sm">Sep 2024</h4>
+                <h2 className=""> Hashicorp Certified: Terraform Associate</h2>
+                <p className="text-xs lg:text-sm">Hashicorp</p>
+                <div
+                  className="text-sm text-blue-500 group flex items-center gap-x-1 mx-auto w-max no-underline"
+                >
+                  Exam Scheduled!
+                </div>
+                <br></br>
+              </div>
+            </div>
+          </BlurFade>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 4 * 0.05} className="">
+          {" "}
+          <div className="h-28 w-[2px] bg-black/25 border-dotted border dark:bg-white/50 rounded-full mx-auto my-3"></div>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
+          <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
+            <div className="grid items-center text-center prose text-muted-foreground dark:prose-invert">
+              <div className="text-sm w-full col-span-2">
+                <Image
                   src="/365.png"
                   alt="deakin logo"
                   width={1000}
@@ -49,10 +77,10 @@ export default function CertificatesPage() {
               </div>
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 4 * 0.05} className="">
-            {" "}
-            <div className="h-28 w-[2px] bg-black/25 border-dotted border dark:bg-white/50 rounded-full mx-auto my-3"></div>
-          </BlurFade>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 4 * 0.05} className="">
+          {" "}
+          <div className="h-28 w-[2px] bg-black/25 border-dotted border dark:bg-white/50 rounded-full mx-auto my-3"></div>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
           <div className="grid items-center text-center prose text-muted-foreground dark:prose-invert">
