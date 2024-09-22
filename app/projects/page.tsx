@@ -26,6 +26,7 @@ export default function ProjectsPage() {
             <CodeIcon size={32}></CodeIcon>
           </div>
         </BlurFade>
+        <h1 className="text-2xl">Note: Under Heavy Development</h1>
         <br></br>
         <BlurFade
           delay={BLUR_FADE_DELAY * 0 * 0.05}

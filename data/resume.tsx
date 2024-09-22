@@ -50,7 +50,14 @@ export const DATA = {
     "Jenkins*",
     "Terraform*",
   ],
-  categories: ["All", "Cloud", "Web", "Networking", "Cyber", "Others"],
+  categories: [
+    "🎃 All",
+    "☁️ Cloud",
+    "💻 Web",
+    "🛜 Networking",
+    "𒄉 Cyber",
+    "💀 Others",
+  ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/education", icon: GraduationCapIcon, label: "Education" },
@@ -84,6 +91,30 @@ export const DATA = {
         "Leadership",
         "Collaboration",
       ],
+    },
+    {
+      name: "Terrraaaformmmmm 🚀",
+      description: "coming soon",
+      contribution: "",
+      category: ["Cloud"],
+      url: "terraform",
+      tags: ["Terraform", "Infrastructure as Code"],
+    },
+    {
+      name: "CRUD Operations on AWS S3 📦",
+      description: "coming soon",
+      contribution: "",
+      category: ["Cloud"],
+      url: "s3",
+      tags: ["AWS", "S3"],
+    },
+    {
+      name: "Lambda Functions 🚀",
+      description: "coming soon",
+      contribution: "",
+      category: ["Cloud"],
+      url: "lambda",
+      tags: ["AWS", "Lambda"],
     },
     {
       name: "Portfolio Website ✨",
@@ -156,13 +187,43 @@ export const DATA = {
       contribution:
         "This project forms the part of a unit called 'Introduction to Programming', after learning the basics of programming for few weeks, HD aiming students were asked to build 'something awesome', what's more awesome than a game, right? So, i built this game using C++ and Splashkit.",
       category: ["Others"],
-      url: "cms",
+      url: "game",
       tags: [
         "C++",
         "Splashkit",
         "Game Development",
         "Procedural/Sequential Progarmming",
         "Problem Solving",
+      ],
+    },
+    {
+      name: "Better than the big 4 banks 💯",
+      description: "C#, i thought its a musical note 😅",
+      contribution:
+        "This project forms the part of a unit called 'Object Oriented Programming', to learn about the object oriented programming concepts, every week for 12 weeks, we iteratively built this bank management system using C#. It allows the user to create/delete an account, deposit, withdraw, and transfer money between accounts.",
+      category: ["Others"],
+      url: "bank",
+      tags: [
+        "C#",
+        "Object Oriented Programming",
+        "Problem Solving",
+        "Iteraive Development",
+      ],
+    },
+    {
+      name: "I can see the hashed password and email 💀",
+      description:
+        "I inpersonated a a ethical hacker for a day, this duma** kid on youtube wannabe 'Founder' recorded a 'Day in a life of a startup founder' while showing his code, accidently showed his .env file, and this file literraly has all the secrets in plain text, so i decided to teach him a lesson.",
+      contribution:
+        "I documented the process i followed and tried to contact the 'founder' to help him secure his application, but 'founders' begin 'founders', too busy, still waiting for his reply. Anyways, i can only hope he will learn from this.",
+      category: ["Cyber"],
+      url: "founder",
+      tags: [
+        "Ethical Hacking",
+        "Incidient Response",
+        "Documentation",
+        "Security Analyst",
+        "Cyber Security",
       ],
     },
   ],
