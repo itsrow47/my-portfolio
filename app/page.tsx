@@ -26,7 +26,7 @@ export default function Page() {
             <div className="flex-col flex flex-1 items-center space-y-5 relative w-full">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                className="text-3xl font-bold sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
                 text={`${DATA.name}`}
               />
@@ -39,9 +39,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hero" className="space-y-5">
+      <section id="images" className="space-y-5">
         {" "}
-        <div className="flex items-center justify-center gap-x-3 flex-wrap w-96 gap-2 mx-auto">
+        <div className="flex items-center justify-center gap-x-3 w-64 md:w-full flex-wrap gap-2 mx-auto">
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 0 * 0.05}>
             <Image
               src="/deakin.png"
