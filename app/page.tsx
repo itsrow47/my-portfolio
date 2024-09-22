@@ -107,11 +107,11 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 14 * 0.05}>
             <Image
-              src="/Terraform.png"
+              src="/Terraform.svg"
               alt="acs logo"
               width={1000}
               height={1000}
-              className="w-10 h-10 rounded-full"
+              className="w-10 h-10 rounded-full object-contain"
             ></Image>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 16 * 0.05}>
