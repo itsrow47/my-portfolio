@@ -51,12 +51,12 @@ export const DATA = {
     "Terraform*",
   ],
   categories: [
-    "🎃 All",
-    "☁️ Cloud",
-    "💻 Web",
-    "🛜 Networking",
-    "𒄉 Cyber",
-    "💀 Others",
+    "All",
+    "Cloud",
+    "Web",
+    "Networking",
+    "Cyber",
+    "Others",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
