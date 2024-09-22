@@ -42,6 +42,7 @@ export default async function ProjectDetailsPage({
       <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="mt-3">
         <h1> {project?.name}</h1>
         <p>{project?.description}</p>
+        <br></br>
         <div className="flex gap-2 items-center justify-center flex-wrap">
           {project?.tags.map((tag) => (
             <Badge key={tag} className="">

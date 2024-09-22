@@ -26,12 +26,6 @@ export default function ProjectsPage() {
             <CodeIcon size={32}></CodeIcon>
           </div>
         </BlurFade>
-        <BlurFade
-          delay={BLUR_FADE_DELAY * 0 * 0.05}
-          className="font-bold text-xl"
-        >
-          Under construction
-        </BlurFade>
         <br></br>
         <BlurFade
           delay={BLUR_FADE_DELAY * 0 * 0.05}
@@ -61,33 +55,42 @@ export default function ProjectsPage() {
               project.category.includes(selectedCategory)
             ) {
               return (
-                <div
-                  key={id}
-                  className="grid items-center  text-center prose text-muted-foreground dark:prose-invert"
-                >
-                  <div className="text-sm w-full col-span-2">
-                    <h2 className="">{project.name}</h2>
-                    <p className="text-xs lg:text-sm">{project.description}</p>
-                    <div className="flex gap-2 items-center justify-center flex-wrap">
-                      {project.tags.map((tag) => (
-                        <Badge key={tag} className="">
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                    <br></br>
-                    <Link
-                      href={`/projects/${project.url}`}
-                      className="text-sm text-blue-500 group flex items-center gap-x-1 mx-auto w-max no-underline"
-                    >
-                      View Project
-                      <div className="group-hover:translate-x-1 transition duration-300">
-                        <ArrowUpRight size={16} />
+                <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="">
+                  <div
+                    key={id}
+                    className="grid items-center  text-center prose text-muted-foreground dark:prose-invert"
+                  >
+                    <div className="text-sm w-full col-span-2">
+                      <h2 className="">{project.name}</h2>
+                      <p className="text-xs lg:text-sm">
+                        {project.description}
+                      </p>
+                      <p className="text-xs lg:text-sm font-medium">
+                        {project.contribution}
+                      </p>
+                      <br></br>
+                      <div className="flex gap-2 items-center justify-center flex-wrap">
+                        {project.tags.map((tag) => (
+                          <Badge key={tag} className="">
+                            {tag}
+                          </Badge>
+                        ))}
                       </div>
-                    </Link>
-                    <br></br>
+                      <br></br>
+                      <Link
+                        href={`/projects/${project.url}`}
+                        className="text-sm text-blue-500 group flex items-center gap-x-1 mx-auto w-max no-underline"
+                      >
+                        View Project
+                        <div className="group-hover:translate-x-1 transition duration-300">
+                          <ArrowUpRight size={16} />
+                        </div>
+                      </Link>
+                      <br></br>
+                      <div className="border-b max-w-sm mx-auto"></div>
+                    </div>
                   </div>
-                </div>
+                </BlurFade>
               );
             }
           })}

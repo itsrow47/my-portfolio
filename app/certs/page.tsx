@@ -92,7 +92,7 @@ export default function CertificatesPage() {
                 height={1000}
                 className="w-24 h-24 rounded-full mx-auto"
               ></Image>
-              <h4 className="text-sm">January 2023</h4>
+              <h4 className="text-sm">Jan 2023</h4>
               <h2 className="">AWS Certified Cloud Practitioner</h2>
               <p className="text-xs lg:text-sm">Amazon Web Services</p>
               <Link
