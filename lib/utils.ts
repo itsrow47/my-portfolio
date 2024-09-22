@@ -35,3 +35,12 @@ export function formatDate(date: string) {
     return `${fullDate} (${yearsAgo}y ago)`;
   }
 }
+
+export async function getProjectBySlug() {
+  let data = await fetch(
+    "https://0gdb82ckvl.execute-api.ap-southeast-2.amazonaws.com/objects?fileName=website-on-aws.mdx"
+  );
+
+  let posts = data.json();
+  return posts;
+}

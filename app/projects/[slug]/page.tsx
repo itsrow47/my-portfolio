@@ -1,10 +1,10 @@
-"use client";
 import BlurFade from "../../../components/magicui/blur-fade";
 const BLUR_FADE_DELAY = 0.04;
 import { CodeIcon, ArrowLeftIcon } from "lucide-react";
 import { Badge } from "../../../components/ui/badge";
 import Link from "next/link";
 import { DATA } from "../../../data/resume";
+import { getProjectBySlug } from "../../../lib/utils";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 export default async function ProjectDetailsPage({
@@ -13,6 +13,7 @@ export default async function ProjectDetailsPage({
   params: { slug: string };
 }) {
   const project = DATA.projects.find((project) => project.url === params.slug);
+  const projectData = await getProjectBySlug();
   return (
     <section
       id="about"
@@ -48,16 +49,7 @@ export default async function ProjectDetailsPage({
             </Badge>
           ))}
         </div>
-        <br></br>
-        <div className="">
-          <br></br>
-          <MDXRemote
-            source={`# Hello World
-
-      This is from Server Components!
-      `}
-          />{" "}
-        </div>
+        <MDXRemote source={projectData.content} />
       </BlurFade>
     </section>
   );
