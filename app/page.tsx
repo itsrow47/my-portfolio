@@ -107,7 +107,7 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 14 * 0.05}>
             <Image
-              src="/Terraform.svg"
+              src="/terraform.svg"
               alt="acs logo"
               width={1000}
               height={1000}
