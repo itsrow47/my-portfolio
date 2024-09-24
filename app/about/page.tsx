@@ -32,7 +32,7 @@ export default function AboutPage() {
               India, that you don't see on TV, a very small town in the state of
               Punjab where education is a luxury and a privilege. From what i
               remember from my childhood, i have always seen my parents working
-              hard to make ends meet, and i have always been inspired by their
+              hard to provide the best, and i have always been inspired by their
               work ethic. They have made impossible seem possible, despite the
               fact my parents never had the opportunity to go to a good school
               or college. The sacrifices they made for me to be where i am today
