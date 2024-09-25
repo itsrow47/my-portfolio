@@ -50,14 +50,7 @@ export const DATA = {
     "Jenkins*",
     "Terraform*",
   ],
-  categories: [
-    "All",
-    "Cloud",
-    "Web",
-    "Networking",
-    "Cyber",
-    "Others",
-  ],
+  categories: ["All", "Cloud", "Web", "Networking", "Cyber", "Others"],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/education", icon: GraduationCapIcon, label: "Education" },
@@ -212,10 +205,8 @@ export const DATA = {
     },
     {
       name: "I can see the hashed password and email 💀",
-      description:
-        "I inpersonated a a ethical hacker for a day, this duma** kid on youtube wannabe 'Founder' recorded a 'Day in a life of a startup founder' while showing his code, accidently showed his .env file, and this file literraly has all the secrets in plain text, so i decided to teach him a lesson.",
-      contribution:
-        "I documented the process i followed and tried to contact the 'founder' to help him secure his application, but 'founders' begin 'founders', too busy, still waiting for his reply. Anyways, i can only hope he will learn from this.",
+      description: "",
+      contribution: "",
       category: ["Cyber"],
       url: "founder",
       tags: [
