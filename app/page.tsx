@@ -41,7 +41,7 @@ export default function Page() {
       </section>
       <section id="images" className="space-y-5">
         {" "}
-        <div className="flex items-center justify-center gap-x-3 w-64 md:w-80 lg:w-[70%] flex-wrap gap-2 mx-auto">
+        <div className="flex items-center justify-center gap-x-3 w-70 md:w-80 lg:w-[70%] flex-wrap gap-2 mx-auto">
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 0 * 0.05}>
             <Image
               src="/deakin.png"
@@ -162,6 +162,24 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 10 + 26 * 0.05}>
             <Image
               src="/docker.svg"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 28 * 0.05}>
+            <Image
+              src="/next.png"
+              alt="acs logo"
+              width={1000}
+              height={1000}
+              className="w-10 h-10 rounded-full bg-white"
+            ></Image>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10 + 30 * 0.05}>
+            <Image
+              src="/mongo.svg"
               alt="acs logo"
               width={1000}
               height={1000}

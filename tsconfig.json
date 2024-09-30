@@ -27,6 +27,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/about/page.tsx"
-  ],
+, "data/project_data/terraform.mdx"  ],
   "exclude": ["node_modules"]
 }

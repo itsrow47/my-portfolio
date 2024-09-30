@@ -13,11 +13,11 @@ export default async function ProjectDetailsPage({
   params: { slug: string };
 }) {
   const project = DATA.projects.find((project) => project.url === params.slug);
-  const projectData = await getProjectBySlug();
+  const projectData = await getProjectBySlug(params.slug);
   return (
     <section
       id="about"
-      className="prose text-muted-foreground dark:prose-invert text-sm mx-auto text-center"
+      className="prose text-muted-foreground dark:prose-invert text-sm mx-auto text-center list-none"
     >
       <BlurFade
         delay={BLUR_FADE_DELAY * 0 * 0.05}
@@ -42,6 +42,7 @@ export default async function ProjectDetailsPage({
       <BlurFade delay={BLUR_FADE_DELAY * 0 * 0.05} className="mt-3">
         <h1> {project?.name}</h1>
         <p>{project?.description}</p>
+        <p>{project?.contribution}</p>
         <br></br>
         <div className="flex gap-2 items-center justify-center flex-wrap">
           {project?.tags.map((tag) => (
@@ -50,7 +51,9 @@ export default async function ProjectDetailsPage({
             </Badge>
           ))}
         </div>
-        <MDXRemote source={projectData.content} />
+        <div className="text-justify">
+          <MDXRemote source={projectData.content} />
+        </div>
       </BlurFade>
     </section>
   );

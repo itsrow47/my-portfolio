@@ -87,8 +87,10 @@ export const DATA = {
     },
     {
       name: "Terrraaaformmmmm 🚀",
-      description: "coming soon",
-      contribution: "",
+      description:
+        "Infrastructure as Code (IaC) is the future, so why not learn it?",
+      contribution:
+        "I learned the basic commands and terminology essential for IaC. I successfully deployed and deleted the following infrastructure components: VPC, Subnets, Internet Gateway, and a NAT Gateway.",
       category: ["Cloud"],
       url: "terraform",
       tags: ["Terraform", "Infrastructure as Code"],
@@ -216,6 +218,30 @@ export const DATA = {
         "Security Analyst",
         "Cyber Security",
       ],
+    },
+    {
+      name: "My Ping - My Rules 🚀",
+      description: "I built my own ping tool, because why not?",
+      contribution: "",
+      category: ["Networking"],
+      url: "ping",
+      tags: ["Python", "Networking", "Scripting"],
+    },
+    {
+      name: "My DNS Server ✨",
+      description: "I built my own DNS server, because why not?",
+      contribution: "",
+      category: ["Networking"],
+      url: "dns",
+      tags: ["Python", "Networking", "Scripting"],
+    },
+    {
+      name: "Cisco Packet Tracer - this is cool 😎",
+      description: "I built a network using cisco packet tracer.",
+      contribution: "",
+      category: ["Networking"],
+      url: "cisco",
+      tags: ["Networking", "Cisco Packet Tracer"],
     },
   ],
 } as const;

@@ -42,7 +42,39 @@ export default function TestimonialsPage() {
                 <ArrowUpRight size={16} />
               </div>
             </Link>
-
+            <div className="mt-20">
+              <p className="">
+                "Thank you very much for taking the time to explain this to me
+                though - you're seriously the only person l've spoken to who
+                actually, well, explained anything"
+              </p>
+              <p className="text-xs w-1/2 mx-auto">
+                <strong>Sean Alsop</strong>, Student at Deakin University
+              </p>
+            </div>
+            <div className="mt-20">
+              <p className="">
+                "Hi Rohit, thanks for your kind help in making me a better
+                professional and developer."
+              </p>
+              <p className="text-xs w-1/2 mx-auto">
+                <strong>Jean Laval Chue Him</strong>, IT Student at Deakin
+                University
+              </p>
+            </div>
+            <div className="mt-20">
+              <p className="">
+                "Thanks, Rohit! I appreciate all your help this semester. All
+                four of my unit's assignments involve Ontrack [Deakin's LMS],
+                and you are the only tutor who has consistently provided me with
+                constructive feedback that I can truly learn from. It has been
+                very helpful to me to grow throughout this semester, and I am
+                grateful for that."
+              </p>
+              <p className="text-xs w-1/2 mx-auto">
+                <strong>Connor Nobel</strong>, IT Student at Deakin University
+              </p>
+            </div>
             <div className="mt-20">
               <p className="">
                 "Rohit was an invaluable member of the Project Echo leadership

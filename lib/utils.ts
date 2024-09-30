@@ -36,9 +36,9 @@ export function formatDate(date: string) {
   }
 }
 
-export async function getProjectBySlug() {
+export async function getProjectBySlug(slug: string) {
   let data = await fetch(
-    "https://0gdb82ckvl.execute-api.ap-southeast-2.amazonaws.com/objects?fileName=website-on-aws.mdx"
+    `https://0gdb82ckvl.execute-api.ap-southeast-2.amazonaws.com/objects?fileName=${slug}.mdx`
   );
 
   let posts = data.json();
